@@ -36,7 +36,7 @@
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container mx-auto justify-content-center">
+        <div class="container align-items-center sm:align-items-end">
           <!-- <a href="#intro" class="navbar-brand scrollTo">Portofolio</a> -->
           <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
           <div id="navbarcollapse" class="collapse navbar-collapse">
@@ -75,7 +75,7 @@
             progamming and Software development, expecially in Back End Developer and Frond End Developer. I can work in teamwork or
             individually.I have basic knowledge of programming android java, python, php, javascript, kotlin.</p>
             
-            <h2 class="text-shadow">Skill</h2>
+            <h3 class="text-shadow">Skill</h3>
               <div  data-aos="fade-up" data-aos-delay="100"  class="skill-item">
                 <div class="progress-title">PHP</div>
                 <div class="progress">
@@ -427,60 +427,125 @@
           <h2 data-aos="fade-up" data-aos-delay="100" class="title">Achievements</h2>
         </div>
         <div class="col-md-12">
-          <div class="row align-items-center">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/webss/ac1.PNG" style="max-width: 1000px; height: 200px;" title="achievment" data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
+         
+          <div class="row"><!-- jika ingin ketengan gunakan ini 'align-items-center' -->
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+                <div class="customer"><img src="img/webss/ac1.PNG" style="max-width: 100%; height: 200px;"
+                    title="Full Stack Android Developer" data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
+              </button>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/webss/ac2.PNG" style="max-width: 1000px; height: 200px;" title="achievment" data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
+            <div class="modal fade" id="exampleModal" tabindex="-10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content d-sm-none d-md-block modal-custome">
+                    <div width="100%" style="background-image: url(img/webss/ac1.PNG); width: 1000px; height: 700px;">
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/webss/ac3.PNG" style="max-width: 1000px; width: 300px; height: 200px;" title="achievment"
-                  data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#acv1">
+                <div class="customer"><img src="img/webss/ac2.PNG" style="max-width: 100%; height: 200px;"
+                    title="Full Stack Website Laravel Vue JS" data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
+                </div>
+              </button>
+              <div class="modal fade" id="acv1" tabindex="-10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content d-sm-none d-md-block modal-custome">
+                    <div width="100%" style="background-image: url(img/webss/ac2.PNG); width: 1000px; height: 700px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#acv2">
+                <div class="customer"><img src="img/webss/ac3.PNG" style="max-width: 100%; width: 300px; height: 200px;"
+                    title="Laravel Web Development" data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
+                </div>
+              </button>
+              <div class="modal fade" id="acv2" tabindex="-10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content d-sm-none d-md-block modal-custome">
+                    <div style="background-image: url(img/webss/ac3.PNG); width: 600px; height: 700px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <button type="button" class="btn btn-light" data-toggle="modal" data-target="#acv3">
+                <div class="customer"><img src="img/webss/ac4.PNG" style="max-width: 100%; width: 300px; height: 200px;"
+                    title="Full Stack Development MicroService" data-placement="bottom" alt="" class="img-fluid d-block mx-auto"></div>
+                </div>
+              </button>
+              <div class="modal fade" id="acv3" tabindex="-10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content modal-custome acv3">
+                    <div style="background-image: url(img/webss/ac4.PNG); width: 700px; height: 700px;">
+                    </div>
+                  </div>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Contact-->
-    <section id="contact" data-animate="bounceIn" class="contact-section contact">
+    <section id="contact"  class="contact-section contact">
       <div class="container">
         <header class="text-center">
           <h2 data-aos="fade-up" data-aos-delay="100" class="title">Contact me</h2>
         </header>
         <div class="row">
           <div class="col-lg-6 col-md-6">
-                  <a href="https://glints.com/id/profile/public/a8617020-6bcc-43f1-af54-81365ef1cc14" style="text-decoration:none; ">
-                    <img src="img/glints.png" alt="" style="max-width: 1000; height: 50px;">
-                    <p class="d-inline ml-1">Rolanda Difandana</p>
-                  </a> <br><br>
-                  <a href="https://www.linkedin.com/in/rolanda-difandana-0217b61ba/" style="text-decoration:none">
-                    <img src="img/linkedin.png" alt="" style="max-width: 1000; height: 50px;">
-                    <p class="d-inline ml-1">Rolanda Difandana</p>
-                  </a><br><br>
-                  <a href="https://www.instagram.com/rlndadifan/?hl=id"  style="text-decoration:none">
-                    <img src="img/instagram.png" alt="" style="max-width: 1000; height: 50px;">
-                    <p class="d-inline ml-1">Rolanda Difandana</p>
-                  </a><br><br>
-                  <a href="https://github.com/rolandadifan" style="text-decoration:none">
-                    <img src="img/GitHub_Logo.png" style="max-width: 1000; height: 50px;">
-                    <p class="d-inline ml-1">Rolanda Difandana</p>
-                  </a>
+            <div data-aos="fade-up" data-aos-delay="100">
+              <a href="https://glints.com/id/profile/public/a8617020-6bcc-43f1-af54-81365ef1cc14"  style="text-decoration:none; ">
+                <img src="img/glints.png" alt="" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">Rolanda Difandana</p>
+              </a> <br><br>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+              <a href="https://www.linkedin.com/in/rolanda-difandana-0217b61ba/"  style="text-decoration:none">
+                <img src="img/linkedin.png" alt="" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">Rolanda Difandana</p>
+              </a><br><br>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+              <a href="https://www.instagram.com/rlndadifan/?hl=id"  style="text-decoration:none">
+                <img src="img/instagram.png" alt="" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">Rolanda Difandana</p>
+              </a><br><br>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+              <a href="https://github.com/rolandadifan"  style="text-decoration:none">
+                <img src="img/GitHub_Logo.png" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">Rolanda Difandana</p>
+              </a>
+            </div>
                   
           </div>
           <div class="col-lg-6 col-md-6">
-            <a href="https://www.facebook.com/rolanda.difan" style="text-decoration:none">
-              <img src="img/facebook.png" alt="" style="max-width: 1000; height: 50px;">
-              <p class="d-inline ml-1">Rolanda Difandana</p>
-            </a><br><br>
-            <a href="#" style="text-decoration:none">
-              <img src="img/whatsapp.png" alt="" style="max-width: 1000; height: 50px;">
-              <p class="d-inline ml-1">085210660594</p>
-            </a><br><br>
-            <a href="https://mail.google.com/mail/" style="text-decoration:none">
-              <img src="img/gmail.png" alt="" style="max-width: 1000; height: 50px;">
-              <p class="d-inline ml-1">rolandadifandana@gmail.com</p>
-            </a>
+            <div data-aos="fade-up" data-aos-delay="500">
+              <a href="https://www.facebook.com/rolanda.difan"  style="text-decoration:none">
+                <img src="img/facebook.png" alt="" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">Rolanda Difandana</p>
+              </a><br><br>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <a href="#" style="text-decoration:none">
+                <img src="img/whatsapp.png" alt="" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">085210660594</p>
+              </a><br><br>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="700">
+              <a href="https://mail.google.com/mail/" data-aos-delay="600" style="text-decoration:none">
+                <img src="img/gmail.png" alt="" style="max-width: 1000; height: 50px;">
+                <p class="d-inline ml-1">rolandadifandana@gmail.com</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
