@@ -4,12 +4,14 @@
   .modal-custome {
     max-width: 100%;
     max-height: 700px;
+    margin-left: -250px;
   }
   .modal-custome.acv3 {
     max-width: 100%;
     width: 600px;
     max-height: 700px;
     height: 450px;
+    margin-left: -250px;
   }
 }
 
