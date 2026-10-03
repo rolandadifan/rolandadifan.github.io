@@ -206,47 +206,52 @@
   <!-- ============================================================== -->
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between gap-4 h-20">
         
         <!-- Logo / Brand -->
-        <a href="#hero" class="flex items-center gap-3 group">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-cyanAccent-500 flex items-center justify-center font-bold text-white shadow-glow-cyan text-lg tracking-wider group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+        <a href="#hero" class="flex items-center gap-3 group shrink-0 whitespace-nowrap">
+          <div class="w-10 h-10 shrink-0 rounded-xl bg-gradient-to-tr from-brand-600 to-cyanAccent-500 flex items-center justify-center font-extrabold text-white shadow-glow-cyan text-base tracking-wider group-hover:scale-105 transition-transform duration-300">
             RD
           </div>
           <div class="flex flex-col">
-            <span class="text-white font-bold tracking-tight text-base sm:text-lg flex items-center gap-1.5">
+            <span class="text-white font-bold tracking-tight text-sm sm:text-base leading-tight whitespace-nowrap group-hover:text-cyanAccent-300 transition-colors">
               Rolanda Difandana
-              <span class="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-cyanAccent-400 border border-slate-700 font-mono hidden sm:inline-block">Full-Stack</span>
             </span>
-            <span class="text-xs text-slate-400 font-mono">Software Engineer</span>
+            <span class="text-[11px] text-cyanAccent-400/90 font-mono leading-tight mt-0.5 whitespace-nowrap">
+              Full-Stack Engineer
+            </span>
           </div>
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-1 text-sm font-medium text-slate-300">
-          <a href="#about" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">About</a>
-          <a href="#experience" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Experience</a>
-          <a href="#skills" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Tech Stack</a>
-          <a href="#projects" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Projects</a>
-          <a href="#education" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Education & Certs</a>
-          <a href="#contact" class="px-3.5 py-2 rounded-lg hover:text-white hover:bg-slate-800/60 transition-colors">Contact</a>
+        <!-- Desktop Navigation Links (Modern Floating Pill Capsule) -->
+        <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1 p-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 backdrop-blur-md shadow-lg text-xs xl:text-sm font-medium text-slate-300 shrink-0">
+          <a href="#about" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">About</a>
+          <a href="#experience" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Experience</a>
+          <a href="#skills" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Skills</a>
+          <a href="#projects" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Projects</a>
+          <a href="#education" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Education</a>
+          <a href="#contact" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Contact</a>
         </nav>
 
         <!-- CTA & Quick Connect -->
-        <div class="hidden sm:flex items-center gap-3">
-          <a href="https://github.com/rolandadifan" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:scale-105 transition-all" title="GitHub Profile">
+        <div class="hidden sm:flex items-center gap-2 shrink-0 whitespace-nowrap">
+          <a href="https://github.com/rolandadifan" target="_blank" rel="noopener noreferrer" class="w-9 h-9 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:scale-105 transition-all" title="GitHub Profile">
             <i class="fab fa-github text-base"></i>
           </a>
-          <a href="https://linkedin.com/in/rolandadifandana" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 hover:scale-105 transition-all" title="LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/rolanda-difandana/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 hover:scale-105 transition-all" title="LinkedIn Profile">
             <i class="fab fa-linkedin-in text-base"></i>
           </a>
-          <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white hover:shadow-glow-cyan hover:scale-[1.03] active:scale-[0.98] transition-all duration-200">
+          <a href="Portfolio_Rolanda_Difandana.pdf" download="Portfolio_Rolanda_Difandana.pdf" target="_blank" class="whitespace-nowrap shrink-0 px-3.5 py-2 text-xs font-semibold rounded-xl bg-slate-800/90 border border-cyanAccent-500/40 text-cyanAccent-300 hover:text-white hover:bg-cyanAccent-500/20 hover:border-cyanAccent-400 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center gap-1.5" title="Download Portfolio PDF">
+            <i class="fa-solid fa-file-arrow-down text-cyanAccent-400 text-xs"></i>
+            <span>PDF</span>
+          </a>
+          <a href="#contact" class="whitespace-nowrap shrink-0 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white hover:shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
             Let's Talk
           </a>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white" aria-label="Toggle Navigation Menu">
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white" aria-label="Toggle Navigation Menu">
           <i id="menuIcon" class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
@@ -256,10 +261,14 @@
         <a href="#about" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">About Me</a>
         <a href="#experience" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Work Experience</a>
         <a href="#skills" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Keahlian Teknis</a>
-        <a href="#projects" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Projek Pilihan</a>
+        <a href="#projects" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Projek</a>
         <a href="#education" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Pendidikan & Sertifikasi</a>
         <a href="#contact" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Kontak Saya</a>
-        <div class="pt-3 flex gap-2">
+        <div class="pt-3 flex flex-col sm:flex-row gap-2">
+          <a href="Portfolio_Rolanda_Difandana.pdf" download="Portfolio_Rolanda_Difandana.pdf" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-slate-800 border border-cyanAccent-500/40 text-cyanAccent-400 font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download Portfolio PDF</span>
+          </a>
           <a href="#contact" class="w-full text-center py-2.5 rounded-lg bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white font-semibold text-xs uppercase tracking-wider">
             Hubungi Saya
           </a>
@@ -315,18 +324,18 @@
             </p>
 
             <!-- Action Buttons -->
-            <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+            <div class="flex flex-wrap items-center gap-3.5 w-full sm:w-auto">
               <a href="#projects" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-indigo-600 to-cyanAccent-600 text-white font-semibold text-sm shadow-glow-cyan hover:shadow-glow-indigo transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] text-center flex items-center justify-center gap-2.5">
                 <i class="fa-solid fa-layer-group"></i>
-                <span>Lihat Projek Pilihan</span>
+                <span>Lihat Projek</span>
               </a>
-              <a href="#experience" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 font-semibold text-sm transition-all duration-200 hover:scale-[1.02] text-center flex items-center justify-center gap-2">
+              <a href="Portfolio_Rolanda_Difandana.pdf" download="Portfolio_Rolanda_Difandana.pdf" target="_blank" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-800 border border-cyanAccent-500/50 hover:border-cyanAccent-400 text-cyanAccent-300 hover:text-white font-semibold text-sm shadow-glow-cyan transition-all duration-200 hover:scale-[1.02] text-center flex items-center justify-center gap-2">
+                <i class="fa-solid fa-file-pdf text-cyanAccent-400"></i>
+                <span>Download Portfolio (PDF)</span>
+              </a>
+              <a href="#experience" class="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 font-semibold text-sm transition-all duration-200 hover:scale-[1.02] text-center flex items-center justify-center gap-2">
                 <i class="fa-solid fa-briefcase text-slate-400"></i>
                 <span>Pengalaman Kerja</span>
-              </a>
-              <a href="#contact" class="w-full sm:w-auto px-5 py-3.5 rounded-xl border border-cyanAccent-500/40 text-cyanAccent-400 hover:bg-cyanAccent-500/10 font-medium text-sm transition-all text-center flex items-center justify-center gap-2">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Hubungi Saya</span>
               </a>
             </div>
 
@@ -362,7 +371,7 @@
                   
                   <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-700/60 text-center">
                     <p class="text-sm font-bold text-white">Rolanda Difandana, S.Kom, M.Kom</p>
-                    <p class="text-xs text-cyanAccent-400 font-mono">Full-Stack Engineer • M.Kom Candidate</p>
+                    <p class="text-xs text-cyanAccent-400 font-mono">Software Engineer • Full-Stack Developer</p>
                   </div>
                 </div>
               </div>
@@ -565,7 +574,7 @@
               <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-cyan-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-brands fa-golang text-sm"></i> Go (Golang)</span>
               <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-yellow-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-brands fa-js text-sm"></i> JavaScript</span>
               <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-blue-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-brands fa-php text-sm"></i> PHP</span>
-              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-emerald-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-solid fa-database text-xs"></i> SQL (T-SQL)</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-emerald-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-solid fa-database text-xs"></i> SQL</span>
               <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-sky-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-solid fa-cube text-xs"></i> Dart</span>
               <span class="px-3 py-1.5 rounded-lg bg-slate-800/90 text-purple-300 border border-slate-700/80 text-xs font-mono flex items-center gap-1.5 hover:scale-105 transition-transform"><i class="fa-brands fa-android text-xs"></i> Kotlin</span>
             </div>
@@ -773,16 +782,21 @@
             </div>
 
             <div class="p-6 sm:p-8 rounded-2xl glass-card spotlight-card border border-slate-800 group-hover:border-slate-700 transition-all duration-300">
-              <div class="mb-4">
-                <h3 class="text-xl font-bold text-white">Full-Stack Developer (Backend & Frontend)</h3>
-                <p class="text-sm font-semibold text-slate-300">Nasari Sentra UMKM & Group</p>
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">Full-Stack Developer (Backend & Frontend)</h3>
+                  <p class="text-sm font-semibold text-slate-300">Nasari Sentra UMKM & Group</p>
+                </div>
+                <a href="https://nadi.co.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1 rounded-full bg-cyanAccent-500/10 text-cyanAccent-400 border border-cyanAccent-500/30 hover:bg-cyanAccent-500/20 transition-colors w-fit">
+                  <i class="fa-solid fa-globe text-[10px]"></i> nadi.co.id
+                </a>
               </div>
 
               <div class="space-y-4">
                 <div>
                   <h4 class="text-xs font-mono uppercase tracking-wider text-cyanAccent-400 mb-2">Peran Back-End Developer (Sep 2021 – Agu 2022):</h4>
                   <ul class="space-y-1.5 text-sm text-slate-300 list-none pl-1">
-                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-brand-400 mt-1 text-xs"></i> <span>Memelihara API layanan web dan mobile untuk memastikan stabilitas operasional.</span></li>
+                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-brand-400 mt-1 text-xs"></i> <span>Memelihara API layanan web dan mobile pada platform <a href="https://nadi.co.id" target="_blank" rel="noopener noreferrer" class="text-cyan-300 hover:underline font-mono text-xs">nadi.co.id</a> untuk memastikan stabilitas operasional.</span></li>
                     <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-brand-400 mt-1 text-xs"></i> <span>Mengembangkan API layanan baru untuk aplikasi versi 2 demi efisiensi dan skalabilitas tinggi.</span></li>
                     <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-brand-400 mt-1 text-xs"></i> <span><strong>Refactoring Redis:</strong> Mengoptimasi API transaksi menggunakan Redis untuk akselerasi respon dan kecepatan eksekusi.</span></li>
                     <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-brand-400 mt-1 text-xs"></i> <span>Membangun API fitur: voucher, e-learning, chat interaktif, Nadi PayLater, sistem poin, dan kode referral.</span></li>
@@ -804,6 +818,7 @@
                 <span class="px-2 py-0.5 bg-slate-800 rounded">REST API</span>
                 <span class="px-2 py-0.5 bg-slate-800 rounded">Admin Dashboard</span>
                 <span class="px-2 py-0.5 bg-slate-800 rounded">Nadi PayLater</span>
+                <a href="https://nadi.co.id" target="_blank" rel="noopener noreferrer" class="px-2 py-0.5 bg-cyanAccent-500/20 text-cyanAccent-300 rounded hover:bg-cyanAccent-500/30 transition-colors">nadi.co.id ↗</a>
               </div>
             </div>
           </div>
@@ -818,9 +833,14 @@
             </div>
 
             <div class="p-6 sm:p-8 rounded-2xl glass-card spotlight-card border border-slate-800 group-hover:border-slate-700 transition-all duration-300">
-              <div class="mb-4">
-                <h3 class="text-xl font-bold text-white">Back-End Developer</h3>
-                <p class="text-sm font-semibold text-slate-300">PT Surya Fajar Equity Fund</p>
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                <div>
+                  <h3 class="text-xl font-bold text-white">Back-End Developer</h3>
+                  <p class="text-sm font-semibold text-slate-300">PT Surya Fajar Equity Fund</p>
+                </div>
+                <a href="https://sfund.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/30 hover:bg-brand-500/20 transition-colors w-fit">
+                  <i class="fa-solid fa-globe text-[10px]"></i> sfund.id
+                </a>
               </div>
 
               <ul class="space-y-2 text-sm text-slate-300 list-none">
@@ -834,7 +854,7 @@
                 </li>
                 <li class="flex items-start gap-2.5">
                   <i class="fa-solid fa-check text-cyanAccent-400 mt-1 text-xs"></i>
-                  <span>Mendesain ulang UI situs admin <code class="text-xs font-mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded">sfund.id</code> dan mengintegrasikan dashboard ke sistem frontend.</span>
+                  <span>Mendesain ulang UI situs admin <a href="https://sfund.id" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-300 bg-slate-800 px-1.5 py-0.5 rounded hover:bg-slate-700 transition-colors">sfund.id ↗</a> dan mengintegrasikan dashboard ke sistem frontend.</span>
                 </li>
               </ul>
 
@@ -843,7 +863,7 @@
                 <span class="px-2 py-0.5 bg-slate-800 rounded">MySQL</span>
                 <span class="px-2 py-0.5 bg-slate-800 rounded">Laravel</span>
                 <span class="px-2 py-0.5 bg-slate-800 rounded">MongoDB</span>
-                <span class="px-2 py-0.5 bg-slate-800 rounded">sfund.id</span>
+                <a href="https://sfund.id" target="_blank" rel="noopener noreferrer" class="px-2 py-0.5 bg-brand-500/20 text-brand-300 rounded hover:bg-brand-500/30 transition-colors">sfund.id ↗</a>
               </div>
             </div>
           </div>
@@ -884,16 +904,16 @@
     </section>
 
     <!-- ============================================================== -->
-    <!-- SELECTED PROJECTS / PROJEK PILIHAN                             -->
+    <!-- SELECTED PROJECTS / PROJEK PILIHAN (CUSTOM VECTOR GRAPHICS)    -->
     <!-- ============================================================== -->
     <section id="projects" class="py-24 bg-slate-950/70 border-y border-slate-800/80 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-14 reveal-item">
-          <span class="text-xs font-mono uppercase tracking-widest text-cyanAccent-400 mb-2 inline-block">Portofolio Unggulan</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Projek Pilihan</h2>
+          <span class="text-xs font-mono uppercase tracking-widest text-cyanAccent-400 mb-2 inline-block">Portofolio</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Projek</h2>
           <p class="text-slate-400 text-sm sm:text-base mt-3">
-            Kumpulan proyek sistem korporat, platform digital, integrasi microservices, dan aplikasi mobile.
+            Kumpulan proyek sistem korporat, platform finansial, integrasi microservices, dan aplikasi mobile.
           </p>
           <div class="w-16 h-1 bg-gradient-to-r from-cyanAccent-500 to-brand-500 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -914,21 +934,52 @@
           </button>
         </div>
 
-        <!-- Projects Grid -->
+        <!-- Projects Grid (All Custom Modern Vector Illustrations) -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          <!-- Project 1: DIBSP Enterprise Ecosystem (CV Highlight) -->
+          <!-- Project 1: DIBSP Enterprise Ecosystem -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-cyanAccent-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="enterprise">
             <div>
-              <div class="relative h-48 bg-gradient-to-tr from-slate-900 via-indigo-950 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-6">
-                <div class="text-center">
-                  <div class="w-14 h-14 rounded-2xl bg-cyanAccent-500/20 text-cyanAccent-400 mx-auto flex items-center justify-center text-2xl mb-3 shadow-glow-cyan group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-network-wired"></i>
-                  </div>
-                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Enterprise Ecosystem</span>
-                  <p class="text-white font-bold text-base mt-1">4 Integrated Portals DIBSP</p>
-                </div>
-                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-cyanAccent-500/10 text-cyanAccent-400 border border-cyanAccent-500/30 text-[10px] font-mono">PT Binasentra Purna</span>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-indigo-950/70 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: 4 Integrated Portals Network -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="dibspGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#22d3ee" />
+                      <stop offset="100%" stop-color="#6366f1" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Background Grid Lines -->
+                  <path d="M20 40H260M20 80H260M20 120H260M70 15V145M140 15V145M210 15V145" stroke="#1e293b" stroke-width="1" stroke-dasharray="3 3"/>
+                  <!-- Connecting Data Lines -->
+                  <path d="M65 45L140 80M215 45L140 80M65 115L140 80M215 115L140 80" stroke="url(#dibspGrad)" stroke-width="2" stroke-opacity="0.7"/>
+                  <!-- 4 Satellite Portals -->
+                  <rect x="30" y="25" width="70" height="36" rx="8" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+                  <circle cx="44" cy="43" r="4" fill="#22d3ee"/>
+                  <rect x="54" y="39" width="34" height="4" rx="2" fill="#94a3b8"/>
+                  <rect x="54" y="46" width="22" height="3" rx="1.5" fill="#475569"/>
+
+                  <rect x="180" y="25" width="70" height="36" rx="8" fill="#0f172a" stroke="#818cf8" stroke-width="1.5"/>
+                  <circle cx="194" cy="43" r="4" fill="#818cf8"/>
+                  <rect x="204" y="39" width="34" height="4" rx="2" fill="#94a3b8"/>
+                  <rect x="204" y="46" width="22" height="3" rx="1.5" fill="#475569"/>
+
+                  <rect x="30" y="99" width="70" height="36" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+                  <circle cx="44" cy="117" r="4" fill="#38bdf8"/>
+                  <rect x="54" y="113" width="34" height="4" rx="2" fill="#94a3b8"/>
+                  <rect x="54" y="120" width="22" height="3" rx="1.5" fill="#475569"/>
+
+                  <rect x="180" y="99" width="70" height="36" rx="8" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+                  <circle cx="194" cy="117" r="4" fill="#a855f7"/>
+                  <rect x="204" y="113" width="34" height="4" rx="2" fill="#94a3b8"/>
+                  <rect x="204" y="120" width="22" height="3" rx="1.5" fill="#475569"/>
+
+                  <!-- Central Core Hub -->
+                  <circle cx="140" cy="80" r="24" fill="#0f172a" stroke="url(#dibspGrad)" stroke-width="2.5"/>
+                  <circle cx="140" cy="80" r="16" fill="url(#dibspGrad)" fill-opacity="0.2"/>
+                  <text x="140" y="84" text-anchor="middle" fill="#ffffff" font-family="monospace" font-weight="bold" font-size="10">DIBSP</text>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-cyanAccent-500/15 text-cyanAccent-300 border border-cyanAccent-500/30 text-[10px] font-mono backdrop-blur-md">PT Binasentra Purna</span>
               </div>
 
               <div class="p-6">
@@ -948,26 +999,155 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Ganti href="#" jika ada live URL -->
-              <a href="#" target="_blank" class="text-cyanAccent-400 hover:text-cyanAccent-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo / Info
-              </a>
-              <span class="text-[11px] text-slate-400 font-mono">Enterprise Internal</span>
+              <span class="text-cyanAccent-400 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-building-shield"></i> Enterprise Core System
+              </span>
+              <span class="text-[11px] text-slate-400 font-mono">4 Portals Integrated</span>
             </div>
           </div>
 
-          <!-- Project 2: Bank BTN Host-to-Host (H2H) Automation (CV Highlight) -->
+          <!-- Project 2: Nadi Digital Ecosystem (nadi.co.id) - Nasari Sentra UMKM -->
+          <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-teal-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="enterprise">
+            <div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-teal-950/60 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Nadi Fintech & SuperApp Ecosystem -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="nadiGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#14b8a6" />
+                      <stop offset="100%" stop-color="#38bdf8" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Decorative Circles -->
+                  <circle cx="140" cy="80" r="62" stroke="#14b8a6" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="4 4"/>
+                  <circle cx="140" cy="80" r="44" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="1"/>
+                  <!-- PayLater & Fintech Card Vector -->
+                  <rect x="75" y="42" width="130" height="76" rx="12" fill="#0f172a" stroke="url(#nadiGrad)" stroke-width="2"/>
+                  <rect x="90" y="56" width="24" height="16" rx="3" fill="#14b8a6" fill-opacity="0.3" stroke="#14b8a6" stroke-width="1.2"/>
+                  <path d="M175 60H190M180 66H190" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+                  <text x="90" y="92" fill="#ffffff" font-family="monospace" font-weight="bold" font-size="12">NADI.CO.ID</text>
+                  <rect x="90" y="100" width="55" height="5" rx="2.5" fill="#14b8a6"/>
+                  <rect x="152" y="100" width="35" height="5" rx="2.5" fill="#334155"/>
+                  <!-- Floating Redis Speed & Voucher Nodes -->
+                  <g transform="translate(28, 26)">
+                    <rect width="46" height="24" rx="6" fill="#111827" stroke="#f43f5e" stroke-width="1.2"/>
+                    <text x="23" y="15" text-anchor="middle" fill="#fda4af" font-family="monospace" font-size="8" font-weight="bold">REDIS</text>
+                  </g>
+                  <g transform="translate(206, 108)">
+                    <rect width="52" height="24" rx="6" fill="#111827" stroke="#38bdf8" stroke-width="1.2"/>
+                    <text x="26" y="15" text-anchor="middle" fill="#7dd3fc" font-family="monospace" font-size="8" font-weight="bold">PAYLATER</text>
+                  </g>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/40 text-[10px] font-mono backdrop-blur-md">Nasari UMKM Group</span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">Nadi Digital Ecosystem (nadi.co.id)</h3>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                  Membangun dan mengoptimalkan layanan API web & mobile V2 untuk ekosistem digital UMKM & Koperasi: fitur Nadi PayLater, e-learning, voucher, live chat, sistem poin, kode referral, refactoring transaksi cepat dengan Redis, serta dashboard admin.
+                </p>
+                
+                <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-emerald-400">Node.js</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-red-400">Redis Caching</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-teal-300">REST API V2</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-sky-300">Admin Dashboard</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
+              <a href="https://nadi.co.id" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit nadi.co.id
+              </a>
+              <span class="text-[11px] text-slate-400 font-mono">Fintech & UMKM</span>
+            </div>
+          </div>
+
+          <!-- Project 3: SFUND Equity Crowdfunding (sfund.id) - PT Surya Fajar Equity Fund -->
+          <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-indigo-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="enterprise">
+            <div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-indigo-950/70 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Equity Crowdfunding Analytics & NestJS Architecture -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="sfundGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.45" />
+                      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.0" />
+                    </linearGradient>
+                  </defs>
+                  <!-- Dashboard Frame -->
+                  <rect x="35" y="22" width="210" height="116" rx="10" fill="#0f172a" stroke="#4f46e5" stroke-width="1.5"/>
+                  <line x1="35" y1="42" x2="245" y2="42" stroke="#1e293b" stroke-width="1.2"/>
+                  <circle cx="48" cy="32" r="3" fill="#ef4444"/>
+                  <circle cx="58" cy="32" r="3" fill="#f59e0b"/>
+                  <circle cx="68" cy="32" r="3" fill="#10b981"/>
+                  <text x="140" y="35" text-anchor="middle" fill="#a5b4fc" font-family="monospace" font-weight="bold" font-size="9">SFUND.ID • EQUITY PLATFORM</text>
+                  <!-- Equity Growth Area & Line Chart -->
+                  <path d="M55 115L90 95L125 102L165 70L200 78L225 54V122H55V115Z" fill="url(#sfundGrad)"/>
+                  <path d="M55 115L90 95L125 102L165 70L200 78L225 54" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="165" cy="70" r="4" fill="#22d3ee" stroke="#0f172a" stroke-width="1.5"/>
+                  <circle cx="225" cy="54" r="4.5" fill="#38bdf8" stroke="#0f172a" stroke-width="1.5"/>
+                  <!-- Badges -->
+                  <rect x="52" y="54" width="66" height="22" rx="5" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+                  <text x="85" y="68" text-anchor="middle" fill="#e0e7ff" font-family="monospace" font-size="8" font-weight="bold">NestJS API</text>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[10px] font-mono backdrop-blur-md">Surya Fajar Equity</span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">SFUND - Securities Crowdfunding (sfund.id)</h3>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                  Memimpin migrasi arsitektur backend platform investasi urun dana (equity crowdfunding) dari Laravel-MongoDB ke NestJS-MySQL untuk skalabilitas transaksi tinggi, serta merancang ulang UI dashboard admin sfund.id.
+                </p>
+                
+                <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-red-400">NestJS</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300">MySQL</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-rose-400">Laravel</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-emerald-400">MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
+              <a href="https://sfund.id" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit sfund.id
+              </a>
+              <span class="text-[11px] text-slate-400 font-mono">Fintech Investment</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Bank BTN Host-to-Host (H2H) Automation -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-brand-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="enterprise">
             <div>
-              <div class="relative h-48 bg-gradient-to-tr from-slate-900 via-blue-950 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-6">
-                <div class="text-center">
-                  <div class="w-14 h-14 rounded-2xl bg-brand-500/20 text-brand-400 mx-auto flex items-center justify-center text-2xl mb-3 shadow-glow-indigo group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-building-columns"></i>
-                  </div>
-                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Banking Integration</span>
-                  <p class="text-white font-bold text-base mt-1">Host-to-Host (H2H) Bank BTN</p>
-                </div>
-                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/30 text-[10px] font-mono">High Concurrency</span>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-blue-950/70 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Host-to-Host Banking Tunnel -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Left Node: Bank Core -->
+                  <rect x="24" y="45" width="68" height="70" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
+                  <path d="M40 72L58 60L76 72H40Z" fill="#38bdf8" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1.2"/>
+                  <line x1="45" y1="75" x2="45" y2="92" stroke="#38bdf8" stroke-width="2"/>
+                  <line x1="58" y1="75" x2="58" y2="92" stroke="#38bdf8" stroke-width="2"/>
+                  <line x1="71" y1="75" x2="71" y2="92" stroke="#38bdf8" stroke-width="2"/>
+                  <rect x="40" y="93" width="36" height="4" rx="1" fill="#38bdf8"/>
+                  <text x="58" y="108" text-anchor="middle" fill="#bae6fd" font-family="monospace" font-size="8" font-weight="bold">BANK BTN</text>
+
+                  <!-- Encrypted H2H Tunnel -->
+                  <line x1="92" y1="70" x2="188" y2="70" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 4"/>
+                  <line x1="92" y1="90" x2="188" y2="90" stroke="#22d3ee" stroke-width="2" stroke-dasharray="4 4"/>
+                  <circle cx="140" cy="80" r="18" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+                  <text x="140" y="83" text-anchor="middle" fill="#22d3ee" font-family="monospace" font-size="8" font-weight="bold">H2H GO</text>
+
+                  <!-- Right Node: Insurance Server -->
+                  <rect x="188" y="45" width="68" height="70" rx="10" fill="#0f172a" stroke="#818cf8" stroke-width="1.8"/>
+                  <rect x="202" y="58" width="40" height="12" rx="3" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2"/>
+                  <rect x="202" y="75" width="40" height="12" rx="3" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2"/>
+                  <circle cx="209" cy="64" r="2" fill="#22d3ee"/>
+                  <circle cx="209" cy="81" r="2" fill="#22d3ee"/>
+                  <text x="222" y="108" text-anchor="middle" fill="#c7d2fe" font-family="monospace" font-size="8" font-weight="bold">INSURANCE</text>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-brand-500/15 text-brand-300 border border-brand-500/30 text-[10px] font-mono backdrop-blur-md">High Concurrency</span>
               </div>
 
               <div class="p-6">
@@ -977,7 +1157,7 @@
                 </p>
                 
                 <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300">Go</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300">Go (Golang)</span>
                   <span class="px-2 py-0.5 rounded bg-slate-800 text-blue-300">MS SQL Server</span>
                   <span class="px-2 py-0.5 rounded bg-slate-800 text-emerald-400">H2H Protocols</span>
                   <span class="px-2 py-0.5 rounded bg-slate-800 text-purple-300">Security / TLS</span>
@@ -986,26 +1166,40 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Ganti href="#" jika ada live URL -->
-              <a href="#" target="_blank" class="text-indigo-400 hover:text-indigo-300 flex items-center gap-1 font-semibold">
+              <span class="text-indigo-400 flex items-center gap-1.5 font-semibold">
                 <i class="fa-solid fa-lock"></i> Banking Secure API
-              </a>
+              </span>
               <span class="text-[11px] text-slate-400 font-mono">Automated Settlement</span>
             </div>
           </div>
 
-          <!-- Project 3: Web Drive Cloud Storage (CV Highlight) -->
+          <!-- Project 5: Web Drive Cloud Storage -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-orange-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="fullstack">
             <div>
-              <div class="relative h-48 bg-gradient-to-tr from-slate-900 via-orange-950/40 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-6">
-                <div class="text-center">
-                  <div class="w-14 h-14 rounded-2xl bg-orange-500/20 text-orange-400 mx-auto flex items-center justify-center text-2xl mb-3 group-hover:scale-110 transition-transform">
-                    <i class="fa-solid fa-cloud-arrow-down"></i>
-                  </div>
-                  <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Cloud Storage Platform</span>
-                  <p class="text-white font-bold text-base mt-1">Web Drive Corporate</p>
-                </div>
-                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-orange-500/10 text-orange-400 border border-orange-500/30 text-[10px] font-mono">Svelte + Go</span>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-orange-950/50 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Secure Cloud Vault & Document Layers -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Cloud Container -->
+                  <rect x="42" y="30" width="196" height="100" rx="14" fill="#0f172a" stroke="#f97316" stroke-width="1.5" stroke-opacity="0.7"/>
+                  <!-- Folder / File Cards -->
+                  <rect x="60" y="48" width="46" height="56" rx="6" fill="#1e293b" stroke="#fb923c" stroke-width="1.2"/>
+                  <line x1="70" y1="64" x2="96" y2="64" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="70" y1="74" x2="90" y2="74" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+                  <text x="83" y="94" text-anchor="middle" fill="#fdba74" font-family="monospace" font-size="7">PDF/DOC</text>
+
+                  <!-- Center Cloud Shield -->
+                  <circle cx="148" cy="78" r="26" fill="#f97316" fill-opacity="0.15" stroke="#f97316" stroke-width="1.8"/>
+                  <path d="M138 82H158C162 82 165 79 165 75C165 71.5 162.5 68.5 159 68C158 62 153 58 147 58C140.5 58 135.5 63 135.5 69.5C132.5 70.5 131 73.5 131 76.5C131 79.5 134 82 138 82Z" stroke="#fb923c" stroke-width="1.8" fill="#0f172a"/>
+                  
+                  <!-- Right Status Stack -->
+                  <rect x="188" y="52" width="34" height="14" rx="4" fill="#1e293b" stroke="#22d3ee" stroke-width="1"/>
+                  <text x="205" y="62" text-anchor="middle" fill="#67e8f9" font-family="monospace" font-size="7">GO API</text>
+                  <rect x="188" y="72" width="34" height="14" rx="4" fill="#1e293b" stroke="#fb923c" stroke-width="1"/>
+                  <text x="205" y="82" text-anchor="middle" fill="#fdba74" font-family="monospace" font-size="7">SVELTE</text>
+                  <rect x="188" y="92" width="34" height="14" rx="4" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+                  <text x="205" y="102" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="7">AES-256</text>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-orange-500/15 text-orange-300 border border-orange-500/30 text-[10px] font-mono backdrop-blur-md">Svelte + Go</span>
               </div>
 
               <div class="p-6">
@@ -1024,20 +1218,35 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Masukkan URL jika ada -->
-              <a href="#" target="_blank" class="text-orange-400 hover:text-orange-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Info Platform
-              </a>
+              <span class="text-orange-400 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-cloud-lock"></i> Enterprise Cloud Drive
+              </span>
               <span class="text-[11px] text-slate-400 font-mono">Document Security</span>
             </div>
           </div>
 
-          <!-- Project 4: Perintis Berdaya (CV Highlight) -->
+          <!-- Project 6: Perintis Berdaya - Kemenko PM -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-emerald-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="fullstack">
             <div>
-              <div class="relative h-48 bg-slate-900 border-b border-slate-800 overflow-hidden">
-                <img src="img/webss/micro-home.PNG" alt="Perintis Berdaya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkCard via-slate-900/60 to-transparent"></div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-emerald-950/60 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: UMKM Empowerment Portal & Growth Nodes -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="35" y="25" width="210" height="110" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+                  <rect x="48" y="38" width="85" height="42" rx="6" fill="#064e3b" fill-opacity="0.4" stroke="#34d399" stroke-width="1.2"/>
+                  <circle cx="65" cy="59" r="9" fill="#10b981" fill-opacity="0.3" stroke="#34d399" stroke-width="1.5"/>
+                  <rect x="80" y="52" width="42" height="5" rx="2.5" fill="#d1fae5"/>
+                  <rect x="80" y="61" width="28" height="4" rx="2" fill="#6ee7b7"/>
+                  
+                  <!-- Bar Analytics -->
+                  <rect x="148" y="64" width="12" height="28" rx="3" fill="#059669"/>
+                  <rect x="166" y="52" width="12" height="40" rx="3" fill="#10b981"/>
+                  <rect x="184" y="42" width="12" height="50" rx="3" fill="#34d399"/>
+                  <rect x="202" y="34" width="12" height="58" rx="3" fill="#6ee7b7"/>
+
+                  <!-- Bottom Banner -->
+                  <rect x="48" y="92" width="184" height="28" rx="6" fill="#1e293b"/>
+                  <text x="140" y="109" text-anchor="middle" fill="#a7f3d0" font-family="monospace" font-size="9" font-weight="bold">PERINTIS BERDAYA • UMKM</text>
+                </svg>
                 <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] font-mono backdrop-blur-md">Kemenko PM (Jul 2025)</span>
               </div>
 
@@ -1057,20 +1266,36 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Siap diisi URL website oleh Anda -->
               <a href="#" target="_blank" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+                <i class="fa-solid fa-globe"></i> National Program Portal
               </a>
               <span class="text-[11px] text-slate-400 font-mono">Government & UMKM</span>
             </div>
           </div>
 
-          <!-- Project 5: YKPBTN Corporate & Participant Dashboard (CV Highlight) -->
+          <!-- Project 7: YKPBTN Corporate & Participant Dashboard -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-blue-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="fullstack">
             <div>
-              <div class="relative h-48 bg-slate-900 border-b border-slate-800 overflow-hidden">
-                <img src="img/webss/store-homepage.PNG" alt="YKPBTN Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkCard via-slate-900/60 to-transparent"></div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-blue-950/60 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: YKPBTN Member Portal & Dashboard UI -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="32" y="24" width="216" height="112" rx="10" fill="#0f172a" stroke="#3b82f6" stroke-width="1.5"/>
+                  <!-- Sidebar -->
+                  <rect x="42" y="36" width="48" height="88" rx="6" fill="#1e293b"/>
+                  <circle cx="66" cy="52" r="8" fill="#3b82f6"/>
+                  <rect x="52" y="68" width="28" height="4" rx="2" fill="#94a3b8"/>
+                  <rect x="52" y="78" width="28" height="4" rx="2" fill="#64748b"/>
+                  <rect x="52" y="88" width="28" height="4" rx="2" fill="#64748b"/>
+                  <!-- Main Dashboard Area -->
+                  <rect x="100" y="36" width="136" height="36" rx="6" fill="#172554" stroke="#60a5fa" stroke-width="1"/>
+                  <text x="168" y="57" text-anchor="middle" fill="#bfdbfe" font-family="monospace" font-size="9" font-weight="bold">YKPBTN PORTAL</text>
+                  <rect x="100" y="80" width="64" height="44" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+                  <rect x="110" y="92" width="32" height="5" rx="2" fill="#60a5fa"/>
+                  <rect x="110" y="103" width="44" height="4" rx="2" fill="#64748b"/>
+                  <rect x="172" y="80" width="64" height="44" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+                  <rect x="182" y="92" width="32" height="5" rx="2" fill="#38bdf8"/>
+                  <rect x="182" y="103" width="44" height="4" rx="2" fill="#64748b"/>
+                </svg>
                 <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[10px] font-mono backdrop-blur-md">YKPBTN (2025–2026)</span>
               </div>
 
@@ -1084,26 +1309,35 @@
                   <span class="px-2 py-0.5 rounded bg-slate-800 text-rose-400">Laravel</span>
                   <span class="px-2 py-0.5 rounded bg-slate-800 text-blue-300">PHP</span>
                   <span class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300">MySQL</span>
-                  <span class="px-2 py-0.5 rounded bg-slate-800 text-purple-300">Admin Dashboard</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-purple-300">Member Dashboard</span>
                 </div>
               </div>
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Siap diisi URL website oleh Anda -->
               <a href="#" target="_blank" class="text-blue-400 hover:text-blue-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+                <i class="fa-solid fa-users-gear"></i> Member & Corporate Portal
               </a>
               <span class="text-[11px] text-slate-400 font-mono">Corporate & Member</span>
             </div>
           </div>
 
-          <!-- Project 6: PT Geo Proteksi & PT Geolestari (CV Highlight) -->
+          <!-- Project 8: PT Geo Proteksi & PT Geolestari -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-amber-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="fullstack">
             <div>
-              <div class="relative h-48 bg-slate-900 border-b border-slate-800 overflow-hidden">
-                <img src="img/webss/ads-1.PNG" alt="PT Geo Proteksi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkCard via-slate-900/60 to-transparent"></div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-amber-950/50 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Engineering Blueprint & Construction Corporate CMS -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25 35H255M25 80H255M25 125H255M65 20V140M140 20V140M215 20V140" stroke="#f59e0b" stroke-opacity="0.12" stroke-width="1"/>
+                  <rect x="45" y="28" width="190" height="104" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+                  <!-- Isometric Building / Structure Vector -->
+                  <path d="M90 112V62L115 48L140 62V112" fill="#f59e0b" fill-opacity="0.15" stroke="#fbbf24" stroke-width="1.8"/>
+                  <path d="M115 48V112" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="3 3"/>
+                  <path d="M132 112V74L154 62L176 74V112" fill="#d97706" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1.8"/>
+                  <line x1="72" y1="112" x2="208" y2="112" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+                  <rect x="155" y="38" width="66" height="18" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+                  <text x="188" y="50" text-anchor="middle" fill="#fde68a" font-family="monospace" font-size="7.5" font-weight="bold">GEO PROTEKSI</text>
+                </svg>
                 <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono backdrop-blur-md">Konstruksi (Mei 2026)</span>
               </div>
 
@@ -1123,20 +1357,33 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Siap diisi URL website oleh Anda -->
               <a href="#" target="_blank" class="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website
+                <i class="fa-solid fa-helmet-safety"></i> Corporate Web Platform
               </a>
               <span class="text-[11px] text-slate-400 font-mono">Corporate Profile</span>
             </div>
           </div>
 
-          <!-- Project 7: Lyra Streaming Music Platform -->
+          <!-- Project 9: Lyra Streaming Music Platform -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-cyanAccent-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="enterprise">
             <div>
-              <div class="relative h-48 bg-slate-900 border-b border-slate-800 overflow-hidden">
-                <img src="img/webss/lyra-index.JPG" alt="Lyra Streaming Music" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkCard via-slate-900/60 to-transparent"></div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-cyan-950/60 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Audio Waveform & Streaming Engine -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="35" y="26" width="210" height="108" rx="14" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5"/>
+                  <!-- Play Disc -->
+                  <circle cx="85" cy="80" r="28" fill="#164e63" fill-opacity="0.5" stroke="#22d3ee" stroke-width="2"/>
+                  <polygon points="80,70 80,90 96,80" fill="#22d3ee"/>
+                  <!-- Equalizer Bars -->
+                  <rect x="132" y="72" width="6" height="24" rx="3" fill="#22d3ee"/>
+                  <rect x="144" y="56" width="6" height="48" rx="3" fill="#38bdf8"/>
+                  <rect x="156" y="46" width="6" height="68" rx="3" fill="#818cf8"/>
+                  <rect x="168" y="64" width="6" height="36" rx="3" fill="#22d3ee"/>
+                  <rect x="180" y="52" width="6" height="56" rx="3" fill="#6366f1"/>
+                  <rect x="192" y="68" width="6" height="28" rx="3" fill="#38bdf8"/>
+                  <rect x="204" y="58" width="6" height="44" rx="3" fill="#22d3ee"/>
+                  <rect x="216" y="74" width="6" height="20" rx="3" fill="#94a3b8"/>
+                </svg>
                 <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-cyanAccent-500/20 text-cyanAccent-300 border border-cyanAccent-500/40 text-[10px] font-mono backdrop-blur-md">Go Gin & Nuxt</span>
               </div>
 
@@ -1156,19 +1403,37 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <a href="https://github.com/rolandadifan" target="_blank" class="text-cyanAccent-400 hover:text-cyanAccent-300 flex items-center gap-1 font-semibold">
+              <a href="https://github.com/rolandadifan" target="_blank" rel="noopener noreferrer" class="text-cyanAccent-400 hover:text-cyanAccent-300 flex items-center gap-1 font-semibold">
                 <i class="fab fa-github"></i> Repository
               </a>
               <span class="text-[11px] text-slate-400 font-mono">Audio Streaming</span>
             </div>
           </div>
 
-          <!-- Project 8: Online Course Platform (Microservices) -->
+          <!-- Project 10: Online Course Platform (Microservices) -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-purple-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="enterprise">
             <div>
-              <div class="relative h-48 bg-slate-900 border-b border-slate-800 overflow-hidden">
-                <img src="img/webss/micro-home.PNG" alt="Online Course Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkCard via-slate-900/60 to-transparent"></div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-purple-950/60 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Multi-service API Gateway & E-Learning -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- API Gateway Box -->
+                  <rect x="95" y="20" width="90" height="28" rx="6" fill="#0f172a" stroke="#c084fc" stroke-width="1.6"/>
+                  <text x="140" y="38" text-anchor="middle" fill="#e9d5ff" font-family="monospace" font-size="8.5" font-weight="bold">API GATEWAY</text>
+                  <!-- Lines to Services -->
+                  <path d="M140 48V68M140 68L65 88M140 68V88M140 68L215 88" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="3 3"/>
+                  <!-- 3 Microservice Containers -->
+                  <rect x="28" y="88" width="74" height="44" rx="7" fill="#0f172a" stroke="#38bdf8" stroke-width="1.4"/>
+                  <text x="65" y="108" text-anchor="middle" fill="#7dd3fc" font-family="monospace" font-size="8" font-weight="bold">NEXT.JS UI</text>
+                  <text x="65" y="120" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="7">SSR Client</text>
+
+                  <rect x="108" y="88" width="64" height="44" rx="7" fill="#0f172a" stroke="#34d399" stroke-width="1.4"/>
+                  <text x="140" y="108" text-anchor="middle" fill="#6ee7b7" font-family="monospace" font-size="8" font-weight="bold">EXPRESS</text>
+                  <text x="140" y="120" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="7">Auth/Users</text>
+
+                  <rect x="178" y="88" width="74" height="44" rx="7" fill="#0f172a" stroke="#fb7185" stroke-width="1.4"/>
+                  <text x="215" y="108" text-anchor="middle" fill="#fda4af" font-family="monospace" font-size="8" font-weight="bold">LARAVEL</text>
+                  <text x="215" y="120" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="7">Course/Order</text>
+                </svg>
                 <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40 text-[10px] font-mono backdrop-blur-md">Microservices</span>
               </div>
 
@@ -1195,13 +1460,33 @@
             </div>
           </div>
 
-          <!-- Project 9: Flutter Mobile Server Monitoring & Movie Ticket App -->
+          <!-- Project 11: Flutter Mobile Server Monitoring & Movie Ticket App -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-sky-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="mobile">
             <div>
-              <div class="relative h-48 bg-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-3">
-                <img src="img/webss/ad-1.jpg" alt="Aplikasi Tiket Movie" class="h-full object-contain rounded-lg group-hover:scale-105 transition-transform duration-500">
-                <div class="absolute inset-0 bg-gradient-to-t from-darkCard via-transparent to-transparent"></div>
-                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 text-[10px] font-mono backdrop-blur-md">Mobile App</span>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-sky-950/60 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Dual Mobile Frames with Real-Time Server Pulse -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Left Phone: Server Monitoring -->
+                  <rect x="64" y="18" width="68" height="124" rx="12" fill="#0f172a" stroke="#38bdf8" stroke-width="1.8"/>
+                  <line x1="90" y1="25" x2="106" y2="25" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+                  <rect x="74" y="34" width="48" height="24" rx="4" fill="#0c4a6e" fill-opacity="0.5"/>
+                  <path d="M78 50L86 42L94 48L104 38L116 44" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="74" y="64" width="48" height="14" rx="3" fill="#1e293b"/>
+                  <circle cx="82" cy="71" r="3" fill="#10b981"/>
+                  <rect x="90" y="69" width="24" height="4" rx="2" fill="#94a3b8"/>
+                  <rect x="74" y="84" width="48" height="14" rx="3" fill="#1e293b"/>
+                  <circle cx="82" cy="91" r="3" fill="#38bdf8"/>
+                  <rect x="90" y="89" width="24" height="4" rx="2" fill="#94a3b8"/>
+                  <text x="98" y="122" text-anchor="middle" fill="#7dd3fc" font-family="monospace" font-size="7" font-weight="bold">FLUTTER</text>
+
+                  <!-- Right Phone: Ticket App -->
+                  <rect x="148" y="26" width="68" height="116" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="1.8"/>
+                  <line x1="174" y1="33" x2="190" y2="33" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+                  <rect x="158" y="42" width="48" height="52" rx="6" fill="#3b0764" fill-opacity="0.4" stroke="#c084fc" stroke-width="1.2"/>
+                  <rect x="168" y="52" width="28" height="28" rx="3" fill="#1e293b" stroke="#e9d5ff" stroke-width="1" stroke-dasharray="2 2"/>
+                  <text x="182" y="118" text-anchor="middle" fill="#d8b4fe" font-family="monospace" font-size="7" font-weight="bold">KOTLIN</text>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/40 text-[10px] font-mono backdrop-blur-md">Mobile Apps</span>
               </div>
 
               <div class="p-6">
@@ -1220,8 +1505,7 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <!-- LINK PLACEHOLDER: Ganti jika ada repo / PlayStore URL -->
-              <a href="https://github.com/rolandadifan" target="_blank" class="text-sky-400 hover:text-sky-300 flex items-center gap-1 font-semibold">
+              <a href="https://github.com/rolandadifan" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:text-sky-300 flex items-center gap-1 font-semibold">
                 <i class="fab fa-github"></i> Repository
               </a>
               <span class="text-[11px] text-slate-400 font-mono">Flutter & Kotlin</span>
@@ -1316,8 +1600,7 @@
                 </p>
               </div>
               <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                <!-- LINK SERTIFIKAT PLACEHOLDER: Masukkan URL kredensial Anda di href="#" -->
-                <a href="#" target="_blank" class="cert-link text-cyanAccent-400 hover:text-cyanAccent-300 font-semibold flex items-center gap-1.5" title="Masukkan link sertifikat">
+                <a href="https://www.englishscore.com/verify" target="_blank" rel="noopener noreferrer" class="cert-link text-cyanAccent-400 hover:text-cyanAccent-300 font-semibold flex items-center gap-1.5" title="Verifikasi Sertifikat EnglishScore">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Link Sertifikat
                 </a>
                 <span class="text-[11px] text-slate-400 font-mono">British Council</span>
@@ -1338,8 +1621,7 @@
                 </p>
               </div>
               <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                <!-- LINK SERTIFIKAT PLACEHOLDER: Masukkan URL kredensial HackerRank Anda di href="#" -->
-                <a href="#" target="_blank" class="cert-link text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1.5" title="Masukkan link sertifikat">
+                <a href="https://www.hackerrank.com/certificates/830579088079" target="_blank" rel="noopener noreferrer" class="cert-link text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1.5" title="Verifikasi Sertifikat HackerRank">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Link Sertifikat
                 </a>
                 <span class="text-[11px] text-slate-400 font-mono">HackerRank</span>
@@ -1360,8 +1642,7 @@
                 </p>
               </div>
               <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
-                <!-- LINK SERTIFIKAT PLACEHOLDER: Masukkan URL sertifikat Anda di href="#" -->
-                <a href="#" target="_blank" class="cert-link text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5" title="Masukkan link sertifikat">
+                <a href="https://drive.google.com/file/d/13Bs8SEiSSwAXsfYQ-K1XxCSscVpvyjyr/view" target="_blank" rel="noopener noreferrer" class="cert-link text-sky-400 hover:text-sky-300 font-semibold flex items-center gap-1.5" title="Lihat Sertifikat Flutter">
                   <i class="fa-solid fa-arrow-up-right-from-square"></i> Link Sertifikat
                 </a>
                 <span class="text-[11px] text-slate-400 font-mono">Onetwocode</span>
@@ -1385,8 +1666,7 @@
                 <button type="button" class="view-cert-modal text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1.5" data-img="img/webss/ac4.PNG" data-title="Website Development: Microservice - BuildWithAngga">
                   <i class="fa-solid fa-image"></i> Preview Gambar
                 </button>
-                <!-- LINK SERTIFIKAT PLACEHOLDER -->
-                <a href="#" target="_blank" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Masukkan link verifikasi">
+                <a href="https://buildwithangga.com/talent/rolandadifandana/web-development-microservice-website-kelas-online" target="_blank" rel="noopener noreferrer" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Verifikasi di BuildWithAngga">
                   <i class="fa-solid fa-link"></i> Link Web
                 </a>
               </div>
@@ -1409,8 +1689,7 @@
                 <button type="button" class="view-cert-modal text-red-400 hover:text-red-300 font-semibold flex items-center gap-1.5" data-img="img/webss/ac3.PNG" data-title="Laravel Web Development - SanberCode">
                   <i class="fa-solid fa-image"></i> Preview Gambar
                 </button>
-                <!-- LINK SERTIFIKAT PLACEHOLDER -->
-                <a href="#" target="_blank" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Masukkan link verifikasi">
+                <a href="https://drive.google.com/drive/u/0/folders/1l-NJajUcDSmb42J445sc_jSHLdtiOCkE" target="_blank" rel="noopener noreferrer" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Lihat Sertifikat SanberCode">
                   <i class="fa-solid fa-link"></i> Link Web
                 </a>
               </div>
@@ -1433,8 +1712,7 @@
                 <button type="button" class="view-cert-modal text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1.5" data-img="img/webss/ac2.PNG" data-title="Full-Stack Website Laravel Vue JS - BuildWithAngga">
                   <i class="fa-solid fa-image"></i> Preview Gambar
                 </button>
-                <!-- LINK SERTIFIKAT PLACEHOLDER -->
-                <a href="#" target="_blank" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Masukkan link verifikasi">
+                <a href="https://buildwithangga.com/talent/rolandadifandana/full-stack-web-laravel-vue-js" target="_blank" rel="noopener noreferrer" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Verifikasi di BuildWithAngga">
                   <i class="fa-solid fa-link"></i> Link Web
                 </a>
               </div>
@@ -1457,8 +1735,7 @@
                 <button type="button" class="view-cert-modal text-teal-400 hover:text-teal-300 font-semibold flex items-center gap-1.5" data-img="img/webss/ac1.PNG" data-title="Full Stack Android Developer - BuildWithAngga">
                   <i class="fa-solid fa-image"></i> Preview Gambar
                 </button>
-                <!-- LINK SERTIFIKAT PLACEHOLDER -->
-                <a href="#" target="_blank" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Masukkan link verifikasi">
+                <a href="https://buildwithangga.com/talent/rolandadifandana/full-stack-android-developer" target="_blank" rel="noopener noreferrer" class="cert-link text-slate-400 hover:text-white font-mono text-[11px]" title="Verifikasi di BuildWithAngga">
                   <i class="fa-solid fa-link"></i> Link Web
                 </a>
               </div>
@@ -1498,12 +1775,12 @@
                 </div>
                 <div>
                   <p class="text-xs text-slate-400 font-mono uppercase">Email Utama</p>
-                  <a href="mailto:rolanda.difandana@email.com" class="text-sm sm:text-base font-bold text-white hover:text-cyanAccent-400 transition-colors">
-                    rolanda.difandana@email.com
+                  <a href="mailto:rolandadifandana@gmail.com" class="text-sm sm:text-base font-bold text-white hover:text-cyanAccent-400 transition-colors">
+                    rolandadifandana@gmail.com
                   </a>
                 </div>
               </div>
-              <button onclick="copyToClipboard('rolanda.difandana@email.com', this)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-mono transition-colors" title="Salin Email">
+              <button onclick="copyToClipboard('rolandadifandana@gmail.com', this)" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-mono transition-colors" title="Salin Email">
                 <i class="fa-regular fa-copy"></i>
               </button>
             </div>
@@ -1534,12 +1811,12 @@
                 </div>
                 <div>
                   <p class="text-xs text-slate-400 font-mono uppercase">LinkedIn Profil</p>
-                  <a href="https://linkedin.com/in/rolandadifandana" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-bold text-white hover:text-blue-400 transition-colors">
-                    linkedin.com/in/rolandadifandana
+                  <a href="https://www.linkedin.com/in/rolanda-difandana/" target="_blank" rel="noopener noreferrer" class="text-sm sm:text-base font-bold text-white hover:text-blue-400 transition-colors">
+                    linkedin.com/in/rolanda-difandana
                   </a>
                 </div>
               </div>
-              <a href="https://linkedin.com/in/rolandadifandana" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 text-xs font-mono font-semibold transition-colors">
+              <a href="https://www.linkedin.com/in/rolanda-difandana/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-400 text-xs font-mono font-semibold transition-colors">
                 Connect
               </a>
             </div>
@@ -1559,6 +1836,25 @@
               </div>
               <a href="https://github.com/rolandadifan" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono font-semibold transition-colors">
                 Follow
+              </a>
+            </div>
+
+            <!-- Download Portfolio PDF Item -->
+            <div class="p-5 rounded-2xl glass-card spotlight-card reveal-item border border-cyanAccent-500/30 hover:border-cyanAccent-400/60 transition-colors flex items-center justify-between gap-4">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-cyanAccent-500/20 text-cyanAccent-400 flex items-center justify-center text-xl shrink-0">
+                  <i class="fa-solid fa-file-pdf"></i>
+                </div>
+                <div>
+                  <p class="text-xs text-cyanAccent-400 font-mono uppercase">Dokumen Portofolio & CV Resmi</p>
+                  <a href="Portfolio_Rolanda_Difandana.pdf" download="Portfolio_Rolanda_Difandana.pdf" target="_blank" class="text-sm sm:text-base font-bold text-white hover:text-cyanAccent-300 transition-colors">
+                    Portfolio_Rolanda_Difandana.pdf
+                  </a>
+                </div>
+              </div>
+              <a href="Portfolio_Rolanda_Difandana.pdf" download="Portfolio_Rolanda_Difandana.pdf" target="_blank" class="px-3.5 py-1.5 rounded-lg bg-cyanAccent-500/20 hover:bg-cyanAccent-500/30 text-cyanAccent-300 text-xs font-mono font-semibold transition-colors flex items-center gap-1.5 shrink-0">
+                <i class="fa-solid fa-download"></i>
+                <span>Unduh PDF</span>
               </a>
             </div>
 
@@ -1615,7 +1911,7 @@
         <div class="flex items-center gap-6">
           <a href="#hero" class="hover:text-cyanAccent-400 transition-colors">Back to top ↑</a>
           <a href="https://github.com/rolandadifan" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github text-sm"></i></a>
-          <a href="https://linkedin.com/in/rolandadifandana" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a>
+          <a href="https://www.linkedin.com/in/rolanda-difandana/" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fab fa-linkedin text-sm"></i></a>
         </div>
 
       </div>
@@ -1977,8 +2273,36 @@
       const subject = encodeURIComponent(`Kontak Portofolio dari ${name}`);
       const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`);
 
-      window.location.href = `mailto:rolanda.difandana@email.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:rolandadifandana@gmail.com?subject=${subject}&body=${body}`;
     }
+
+    // 13. Navbar Active Section Scroll-Spy
+    const navPills = document.querySelectorAll('.nav-pill');
+    const spySections = ['about', 'experience', 'skills', 'projects', 'education', 'contact']
+      .map(id => document.getElementById(id))
+      .filter(Boolean);
+
+    function updateActiveNav() {
+      const scrollPos = window.scrollY + 180;
+      let currentId = '';
+      spySections.forEach(sec => {
+        if (scrollPos >= sec.offsetTop) {
+          currentId = sec.id;
+        }
+      });
+
+      navPills.forEach(pill => {
+        const href = pill.getAttribute('href');
+        if (href === `#${currentId}`) {
+          pill.classList.add('bg-gradient-to-r', 'from-brand-600/90', 'to-cyanAccent-600/90', 'text-white', 'shadow-glow-cyan');
+        } else {
+          pill.classList.remove('bg-gradient-to-r', 'from-brand-600/90', 'to-cyanAccent-600/90', 'text-white', 'shadow-glow-cyan');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
   </script>
 
 </body>
