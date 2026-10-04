@@ -225,16 +225,22 @@
 
         <!-- Desktop Navigation Links (Modern Floating Pill Capsule) -->
         <nav class="hidden lg:flex items-center gap-0.5 xl:gap-1 p-1.5 rounded-full bg-slate-900/90 border border-slate-700/70 backdrop-blur-md shadow-lg text-xs xl:text-sm font-medium text-slate-300 shrink-0">
-          <a href="#about" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">About</a>
-          <a href="#experience" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Experience</a>
-          <a href="#skills" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Skills</a>
-          <a href="#projects" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Projects</a>
-          <a href="#education" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Education</a>
-          <a href="#contact" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Contact</a>
+          <a href="#about" data-i18n="nav.about" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">About</a>
+          <a href="#experience" data-i18n="nav.exp" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Experience</a>
+          <a href="#skills" data-i18n="nav.skills" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Skills</a>
+          <a href="#projects" data-i18n="nav.projects" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Projects</a>
+          <a href="#education" data-i18n="nav.edu" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Education</a>
+          <a href="#contact" data-i18n="nav.contact" class="nav-pill whitespace-nowrap px-3.5 xl:px-4 py-1.5 rounded-full hover:text-white hover:bg-slate-800/90 transition-all duration-200">Contact</a>
         </nav>
 
-        <!-- CTA & Quick Connect -->
+        <!-- CTA, Language Switcher & Quick Connect -->
         <div class="hidden sm:flex items-center gap-2 shrink-0 whitespace-nowrap">
+          <!-- Language Switcher (ID / EN) -->
+          <div class="inline-flex items-center p-0.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-[11px] font-mono font-bold shrink-0" title="Switch Language (Bahasa Indonesia / English)">
+            <button type="button" onclick="setLanguage('id')" class="lang-btn lang-id px-2.5 py-1.5 rounded-lg transition-all duration-200 bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white shadow-sm">ID</button>
+            <button type="button" onclick="setLanguage('en')" class="lang-btn lang-en px-2.5 py-1.5 rounded-lg transition-all duration-200 text-slate-400 hover:text-white">EN</button>
+          </div>
+
           <a href="https://github.com/rolandadifan" target="_blank" rel="noopener noreferrer" class="w-9 h-9 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-center text-slate-300 hover:text-white hover:border-slate-500 hover:scale-105 transition-all" title="GitHub Profile">
             <i class="fab fa-github text-base"></i>
           </a>
@@ -245,31 +251,42 @@
             <i class="fa-solid fa-file-arrow-down text-cyanAccent-400 text-xs"></i>
             <span>PDF</span>
           </a>
-          <a href="#contact" class="whitespace-nowrap shrink-0 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white hover:shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+          <a href="#contact" data-i18n="nav.cta" class="whitespace-nowrap shrink-0 px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-xl bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white hover:shadow-glow-cyan hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
             Let's Talk
           </a>
         </div>
 
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white" aria-label="Toggle Navigation Menu">
-          <i id="menuIcon" class="fa-solid fa-bars text-lg"></i>
+        <!-- Mobile Right Controls: Lang Switcher + Menu Toggle -->
+        <div class="flex sm:hidden items-center gap-2 shrink-0">
+          <div class="inline-flex items-center p-0.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-[11px] font-mono font-bold">
+            <button type="button" onclick="setLanguage('id')" class="lang-btn lang-id px-2 py-1 rounded-lg transition-all duration-200 bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white">ID</button>
+            <button type="button" onclick="setLanguage('en')" class="lang-btn lang-en px-2 py-1 rounded-lg transition-all duration-200 text-slate-400 hover:text-white">EN</button>
+          </div>
+          <button id="mobileMenuBtn" type="button" class="p-2.5 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white" aria-label="Toggle Navigation Menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Tablet Menu Toggle Button (sm to lg) -->
+        <button id="mobileMenuBtnTablet" type="button" onclick="document.getElementById('mobileMenuBtn').click()" class="hidden sm:block lg:hidden p-2.5 shrink-0 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 hover:text-white" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars text-lg"></i>
         </button>
       </div>
 
       <!-- Mobile Dropdown Menu -->
       <div id="mobileMenu" class="hidden lg:hidden pb-5 pt-2 border-t border-slate-800 flex flex-col gap-1 text-sm font-medium">
-        <a href="#about" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">About Me</a>
-        <a href="#experience" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Work Experience</a>
-        <a href="#skills" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Keahlian Teknis</a>
-        <a href="#projects" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Projek</a>
-        <a href="#education" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Pendidikan & Sertifikasi</a>
-        <a href="#contact" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Kontak Saya</a>
+        <a href="#about" data-i18n="mob.about" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Tentang Saya</a>
+        <a href="#experience" data-i18n="mob.exp" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Pengalaman Kerja</a>
+        <a href="#skills" data-i18n="mob.skills" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Keahlian Teknis</a>
+        <a href="#projects" data-i18n="mob.projects" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Projek</a>
+        <a href="#education" data-i18n="mob.edu" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Pendidikan & Sertifikasi</a>
+        <a href="#contact" data-i18n="mob.contact" class="mobile-nav-link px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/70">Kontak Saya</a>
         <div class="pt-3 flex flex-col sm:flex-row gap-2">
           <a href="Portfolio_Rolanda_Difandana.pdf" download="Portfolio_Rolanda_Difandana.pdf" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-slate-800 border border-cyanAccent-500/40 text-cyanAccent-400 font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2">
             <i class="fa-solid fa-file-arrow-down"></i>
-            <span>Download Portfolio PDF</span>
+            <span data-i18n="mob.pdf">Download Portfolio PDF</span>
           </a>
-          <a href="#contact" class="w-full text-center py-2.5 rounded-lg bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white font-semibold text-xs uppercase tracking-wider">
+          <a href="#contact" data-i18n="mob.cta" class="w-full text-center py-2.5 rounded-lg bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white font-semibold text-xs uppercase tracking-wider">
             Hubungi Saya
           </a>
         </div>
@@ -1315,18 +1332,18 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <a href="#" target="_blank" class="text-blue-400 hover:text-blue-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-users-gear"></i> Member & Corporate Portal
+              <a href="http://ykpbtn.or.id/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> ykpbtn.or.id
               </a>
               <span class="text-[11px] text-slate-400 font-mono">Corporate & Member</span>
             </div>
           </div>
 
-          <!-- Project 8: PT Geo Proteksi & PT Geolestari -->
+          <!-- Project 8A: PT Geo Proteksi Indonesia -->
           <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-amber-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="fullstack">
             <div>
               <div class="relative h-52 bg-gradient-to-br from-slate-950 via-amber-950/50 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
-                <!-- Custom SVG Vector: Engineering Blueprint & Construction Corporate CMS -->
+                <!-- Custom SVG Vector: Engineering Blueprint & Geotechnical Protection Structure -->
                 <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M25 35H255M25 80H255M25 125H255M65 20V140M140 20V140M215 20V140" stroke="#f59e0b" stroke-opacity="0.12" stroke-width="1"/>
                   <rect x="45" y="28" width="190" height="104" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
@@ -1335,16 +1352,16 @@
                   <path d="M115 48V112" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="3 3"/>
                   <path d="M132 112V74L154 62L176 74V112" fill="#d97706" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1.8"/>
                   <line x1="72" y1="112" x2="208" y2="112" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
-                  <rect x="155" y="38" width="66" height="18" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
-                  <text x="188" y="50" text-anchor="middle" fill="#fde68a" font-family="monospace" font-size="7.5" font-weight="bold">GEO PROTEKSI</text>
+                  <rect x="148" y="38" width="74" height="18" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+                  <text x="185" y="50" text-anchor="middle" fill="#fde68a" font-family="monospace" font-size="7.5" font-weight="bold">GEOPROTEKSI</text>
                 </svg>
                 <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-mono backdrop-blur-md">Konstruksi (Mei 2026)</span>
               </div>
 
               <div class="p-6">
-                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">PT Geo Proteksi Indonesia & Geolestari</h3>
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">PT Geo Proteksi Indonesia</h3>
                 <p class="text-xs text-slate-300 leading-relaxed mb-4">
-                  Mengembangkan website korporat dinamis untuk perusahaan konstruksi guna memperkuat identitas brand, showcase proyek sipil, dan sistem manajemen konten (CMS) berbasis Laravel.
+                  Mengembangkan website korporat dinamis beserta CMS berbasis Laravel untuk PT Geo Proteksi Indonesia guna memperkuat identitas brand konstruksi geoteknik dan katalog layanan proyek.
                 </p>
                 
                 <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
@@ -1357,10 +1374,55 @@
             </div>
 
             <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
-              <a href="#" target="_blank" class="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-semibold">
-                <i class="fa-solid fa-helmet-safety"></i> Corporate Web Platform
+              <a href="https://geoproteksi.co.id/" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:text-amber-300 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> geoproteksi.co.id
               </a>
-              <span class="text-[11px] text-slate-400 font-mono">Corporate Profile</span>
+              <span class="text-[11px] text-slate-400 font-mono">Geotechnical Web</span>
+            </div>
+          </div>
+
+          <!-- Project 8B: PT Geolestari -->
+          <div class="project-card group rounded-2xl glass-card spotlight-card reveal-item border border-slate-800 hover:border-teal-500/50 flex flex-col justify-between overflow-hidden transition-all duration-300 hover:-translate-y-2 shadow-lg" data-category="fullstack">
+            <div>
+              <div class="relative h-52 bg-gradient-to-br from-slate-950 via-teal-950/50 to-slate-900 border-b border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                <!-- Custom SVG Vector: Geolestari Sustainable Civil & Environmental Engineering -->
+                <svg class="w-full h-full max-w-[260px] group-hover:scale-105 transition-transform duration-500" viewBox="0 0 280 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25 40H255M25 85H255M25 130H255M70 20V140M140 20V140M210 20V140" stroke="#14b8a6" stroke-opacity="0.12" stroke-width="1"/>
+                  <rect x="42" y="26" width="196" height="108" rx="10" fill="#0f172a" stroke="#14b8a6" stroke-width="1.5"/>
+                  <!-- Terrain & Structural Layers -->
+                  <path d="M58 108C85 92 110 92 140 104C170 116 195 94 222 86V118H58V108Z" fill="#0d9488" fill-opacity="0.25"/>
+                  <path d="M58 108C85 92 110 92 140 104C170 116 195 94 222 86" stroke="#2dd4bf" stroke-width="2" stroke-linecap="round"/>
+                  <!-- Bridge / Truss Pillars -->
+                  <line x1="88" y1="62" x2="88" y2="116" stroke="#5eead4" stroke-width="2"/>
+                  <line x1="140" y1="54" x2="140" y2="116" stroke="#5eead4" stroke-width="2"/>
+                  <line x1="192" y1="64" x2="192" y2="116" stroke="#5eead4" stroke-width="2"/>
+                  <path d="M68 68L88 62L140 54L192 64L212 70" stroke="#99f6e4" stroke-width="1.8" stroke-linecap="round"/>
+                  <rect x="150" y="36" width="72" height="18" rx="4" fill="#1e293b" stroke="#14b8a6" stroke-width="1"/>
+                  <text x="186" y="48" text-anchor="middle" fill="#99f6e4" font-family="monospace" font-size="7.5" font-weight="bold">GEOLESTARI</text>
+                </svg>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/40 text-[10px] font-mono backdrop-blur-md">Konstruksi (Mei 2026)</span>
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-lg font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">PT Geolestari</h3>
+                <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                  Membangun situs korporat modern dan sistem manajemen konten (CMS) untuk PT Geolestari guna menampilkan profil bisnis konstruksi, portofolio proyek lapangan, serta informasi layanan secara profesional.
+                </p>
+                
+                <div class="flex flex-wrap gap-1.5 mb-5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-rose-400">Laravel</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-blue-300">PHP</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-teal-300">Corporate CMS</span>
+                  <span class="px-2 py-0.5 rounded bg-slate-800 text-cyan-300">Responsive UI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 pt-0 border-t border-slate-800/80 flex items-center justify-between gap-3 text-xs">
+              <a href="https://geolestari.co.id/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:text-teal-300 flex items-center gap-1.5 font-semibold">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> geolestari.co.id
+              </a>
+              <span class="text-[11px] text-slate-400 font-mono">Construction CMS</span>
             </div>
           </div>
 
@@ -1981,21 +2043,32 @@
       });
     });
 
-    // 3. Dynamic Typewriter Animation for Hero Subtitle
-    const roles = [
-      "Enterprise Backend & Distributed Systems",
-      "Go (Golang) & Next.js Modern Platforms",
-      "CI/CD Jenkins & Docker Automation",
-      "Host-to-Host (H2H) Bank BTN Integration",
-      "Cloud Web Drive & Svelte Architecture"
-    ];
+    // 3. Dynamic Typewriter Animation for Hero Subtitle (Bilingual ID / EN)
+    const rolesByLang = {
+      id: [
+        "Arsitektur Backend Enterprise & Sistem Terdistribusi",
+        "Platform Modern Go (Golang) & Next.js",
+        "Otomatisasi CI/CD Jenkins & Docker",
+        "Integrasi Perbankan Host-to-Host (H2H) Bank BTN",
+        "Cloud Web Drive & Arsitektur Reaktif Svelte"
+      ],
+      en: [
+        "Enterprise Backend & Distributed Systems",
+        "Go (Golang) & Next.js Modern Platforms",
+        "CI/CD Jenkins & Docker Automation",
+        "Host-to-Host (H2H) Bank BTN Integration",
+        "Cloud Web Drive & Svelte Architecture"
+      ]
+    };
+    let currentLang = localStorage.getItem('portfolio_lang') || 'id';
+    let roles = rolesByLang[currentLang] || rolesByLang.id;
     let roleIdx = 0;
     let charIdx = 0;
     let isDeleting = false;
     const typedElem = document.getElementById('typedRole');
 
     function typeEffect() {
-      const currentRole = roles[roleIdx];
+      const currentRole = roles[roleIdx] || roles[0];
       if (isDeleting) {
         typedElem.textContent = currentRole.substring(0, charIdx - 1);
         charIdx--;
@@ -2006,11 +2079,12 @@
 
       let speed = isDeleting ? 30 : 60;
 
-      if (!isDeleting && charIdx === currentRole.length) {
+      if (!isDeleting && charIdx >= currentRole.length) {
         speed = 2200; // Pause at end of text
         isDeleting = true;
-      } else if (isDeleting && charIdx === 0) {
+      } else if (isDeleting && charIdx <= 0) {
         isDeleting = false;
+        charIdx = 0;
         roleIdx = (roleIdx + 1) % roles.length;
         speed = 400; // Pause before typing next
       }
@@ -2221,7 +2295,7 @@
         const title = button.getAttribute('data-title');
         
         certModalImg.src = imgSrc;
-        certModalTitle.textContent = title || 'Bukti Sertifikat';
+        certModalTitle.textContent = title || (currentLang === 'en' ? 'Certificate Preview' : 'Bukti Sertifikat');
         certModal.classList.remove('hidden');
       });
     });
@@ -2247,9 +2321,9 @@
     // 11. Copy to Clipboard with Toast Notification
     function copyToClipboard(text, btnElement) {
       navigator.clipboard.writeText(text).then(() => {
-        showToast(`"${text}" disalin ke clipboard!`);
+        showToast(currentLang === 'en' ? `"${text}" copied to clipboard!` : `"${text}" disalin ke clipboard!`);
       }).catch(err => {
-        showToast('Gagal menyalin teks');
+        showToast(currentLang === 'en' ? 'Failed to copy text' : 'Gagal menyalin teks');
       });
     }
 
@@ -2270,8 +2344,16 @@
       const email = document.getElementById('senderEmail').value;
       const message = document.getElementById('senderMessage').value;
 
-      const subject = encodeURIComponent(`Kontak Portofolio dari ${name}`);
-      const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`);
+      const subject = encodeURIComponent(
+        currentLang === 'en'
+          ? `Portfolio Inquiry from ${name}`
+          : `Kontak Portofolio dari ${name}`
+      );
+      const body = encodeURIComponent(
+        currentLang === 'en'
+          ? `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+          : `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`
+      );
 
       window.location.href = `mailto:rolandadifandana@gmail.com?subject=${subject}&body=${body}`;
     }
@@ -2303,6 +2385,256 @@
 
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     updateActiveNav();
+
+    // =========================================================================
+    // 14. BILINGUAL INTERNATIONALIZATION ENGINE (BAHASA INDONESIA <-> ENGLISH)
+    // =========================================================================
+    const i18nNodes = [
+      // Navigation (Desktop & Mobile)
+      { sel: '[data-i18n="nav.about"]', id: 'Tentang', en: 'About' },
+      { sel: '[data-i18n="nav.exp"]', id: 'Pengalaman', en: 'Experience' },
+      { sel: '[data-i18n="nav.skills"]', id: 'Keahlian', en: 'Skills' },
+      { sel: '[data-i18n="nav.projects"]', id: 'Projek', en: 'Projects' },
+      { sel: '[data-i18n="nav.edu"]', id: 'Pendidikan', en: 'Education' },
+      { sel: '[data-i18n="nav.contact"]', id: 'Kontak', en: 'Contact' },
+      { sel: '[data-i18n="nav.cta"]', id: 'Hubungi', en: "Let's Talk" },
+
+      { sel: '[data-i18n="mob.about"]', id: 'Tentang Saya', en: 'About Me' },
+      { sel: '[data-i18n="mob.exp"]', id: 'Pengalaman Kerja', en: 'Work Experience' },
+      { sel: '[data-i18n="mob.skills"]', id: 'Keahlian Teknis', en: 'Technical Skills' },
+      { sel: '[data-i18n="mob.projects"]', id: 'Projek', en: 'Projects' },
+      { sel: '[data-i18n="mob.edu"]', id: 'Pendidikan & Sertifikasi', en: 'Education & Certifications' },
+      { sel: '[data-i18n="mob.contact"]', id: 'Kontak Saya', en: 'Contact Me' },
+      { sel: '[data-i18n="mob.pdf"]', id: 'Unduh Portofolio PDF', en: 'Download Portfolio PDF' },
+      { sel: '[data-i18n="mob.cta"]', id: 'Hubungi Saya', en: 'Contact Me' },
+
+      // Hero Section
+      { sel: '#hero h1', en: 'Hi, I\'m <span class="gradient-text">Rolanda Difandana</span>.' },
+      { sel: '#hero #typedRole', prevSibling: true, en: 'Focus:' },
+      { sel: '#hero p.text-slate-400.text-base', en: 'Software Engineer with over <strong class="text-white font-semibold">6 years of experience</strong> architecting backend services, distributed web applications, and enterprise ecosystems. Spearheaded the design of <strong class="text-cyanAccent-400 font-medium">4 integrated enterprise portals (DIBSP)</strong>, led critical platform migrations to <strong class="text-indigo-400 font-medium">Go & Next.js</strong>, built <strong class="text-emerald-400 font-medium">Bank BTN Host-to-Host (H2H)</strong> integrations, and established <strong class="text-amber-400 font-medium">Jenkins & Docker CI/CD</strong> pipelines from scratch.' },
+      { sel: '#hero a[href="#projects"] span', en: 'View Projects' },
+      { sel: '#hero a[href="#experience"] span', en: 'Work Experience' },
+      { sel: '#heroCard > div:nth-of-type(3) p:first-child', en: 'Experience' },
+      { sel: '#heroCard > div:nth-of-type(3) p:last-child', en: '6+ Years' },
+      { sel: '#heroCard > div:nth-of-type(4) p:last-child', en: '4 DIBSP Portals' },
+
+      // Stats Bento Section
+      { sel: 'section.py-12 .grid > div:nth-child(1) p:nth-of-type(1)', en: 'Years of Experience' },
+      { sel: 'section.py-12 .grid > div:nth-child(1) p:nth-of-type(2)', en: 'Web, Mobile & Server-side architecture' },
+      { sel: 'section.py-12 .grid > div:nth-child(2) p:nth-of-type(1)', en: 'DIBSP Ecosystem Portals' },
+      { sel: 'section.py-12 .grid > div:nth-child(2) p:nth-of-type(2)', en: 'Operations, Partners, SPPAJK & Backend' },
+      { sel: 'section.py-12 .grid > div:nth-child(3) p:nth-of-type(1)', en: 'Projects & Platform Migrations' },
+      { sel: 'section.py-12 .grid > div:nth-child(3) p:nth-of-type(2)', en: 'Legacy systems, Bank H2H, Cloud Drive' },
+      { sel: 'section.py-12 .grid > div:nth-child(4) > div:first-child', en: 'M.CS' },
+      { sel: 'section.py-12 .grid > div:nth-child(4) p:nth-of-type(1)', en: 'Master of Computer Science' },
+      { sel: 'section.py-12 .grid > div:nth-child(4) p:nth-of-type(2)', en: 'Budi Luhur University (2024–2026)' },
+
+      // About Section
+      { sel: '#about .text-center > span', en: 'Profile Overview' },
+      { sel: '#about .text-center > h2', en: 'Dedicated to Scalable Architecture & Real Business Impact' },
+      { sel: '#about .lg\\:col-span-7 h3', en: 'Professional Summary' },
+      { sel: '#about .lg\\:col-span-7 .space-y-4 p:nth-child(1)', en: 'I am a Software Engineer with over 6 years of experience building, maintaining, and modernizing web applications, mobile apps, and backend server architectures for medium-to-large corporate enterprises.' },
+      { sel: '#about .lg\\:col-span-7 .space-y-4 p:nth-child(2)', en: 'Within the financial services, investment, and insurance sectors, I hold a key role in architecting an enterprise ecosystem comprising <strong class="text-white">four integrated portals (DIBSP)</strong>, leading critical platform migrations from legacy stacks to modern technologies (such as MERN to Go, SQL, and Next.js), and pioneering automated CI/CD pipelines using Jenkins and Docker from the ground up.' },
+      { sel: '#about .lg\\:col-span-7 .space-y-4 p:nth-child(3)', en: 'I have a proven track record of integrating enterprise services with core banking systems (including <strong class="text-white">Host-to-Host API integration with Bank BTN</strong>), optimizing high-throughput databases (stored procedures & query tuning on Microsoft SQL Server and Redis), and maintaining mission-critical reliability.' },
+      { sel: '#about .lg\\:col-span-7 .mt-8 span:nth-child(1)', en: '<i class="fa-solid fa-location-dot text-cyanAccent-400"></i> East Jakarta, Indonesia' },
+      { sel: '#about .lg\\:col-span-7 .mt-8 span:nth-child(2)', en: '<i class="fa-solid fa-graduation-cap text-indigo-400"></i> B.Sc. Informatics (Telkom) • M.Comp.Sc (Budi Luhur)' },
+      { sel: '#about .lg\\:col-span-7 .mt-8 span:nth-child(3)', en: '<i class="fa-solid fa-language text-emerald-400"></i> Indonesian (Native) • English (Professional Working)' },
+
+      // About 4 Value Pillars
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(1) h4', en: 'Platform Modernization' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(1) p', en: 'Migrating critical platforms from legacy MERN/PHP stacks to Go, SQL, Next.js & Svelte for superior concurrency and performance.' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(2) h4', en: 'CI/CD & DevOps' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(2) p', en: 'Building automated CI/CD pipelines from scratch using Jenkins and Docker to streamline build, testing, and zero-downtime deployment.' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(3) h4', en: 'Banking Integration' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(3) p', en: 'Specializing in high-security Host-to-Host (H2H) API integration with Bank BTN for automated real-time insurance underwriting.' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(4) h4', en: 'Database Optimization' },
+      { sel: '#about .lg\\:col-span-5 > div:nth-child(4) p', en: 'Crafting efficient Stored Procedures, query tuning on MS SQL Server, and accelerating transaction caching with Redis.' },
+
+      // Skills Section
+      { sel: '#skills .text-center > span', en: 'Skills & Tooling' },
+      { sel: '#skills .text-center > h2', en: 'Proven Technical Expertise' },
+      { sel: '#skills .text-center > p', en: 'Integrated technologies I leverage to architect distributed systems, enterprise portals, and modern applications.' },
+      { sel: '#skills .grid > div:nth-child(1) h3', en: 'Programming Languages' },
+      { sel: '#skills .grid > div:nth-child(2) h3', en: 'Backend & Services' },
+      { sel: '#skills .grid > div:nth-child(3) h3', en: 'Modern Frontend Web' },
+      { sel: '#skills .grid > div:nth-child(4) h3', en: 'Databases & Caching' },
+      { sel: '#skills .grid > div:nth-child(5) h3', en: 'DevOps & Pipelines' },
+      { sel: '#skills .grid > div:nth-child(6) h3', en: 'Mobile Development' },
+
+      // Experience Section
+      { sel: '#experience .text-center > span', en: 'Career Track Record' },
+      { sel: '#experience .text-center > h2', en: 'Professional Experience' },
+      { sel: '#experience .text-center > p', en: 'Professional roles in enterprise system architecture, technology modernization, and full-cycle product engineering.' },
+
+      // Experience 1: PT Binasentra Purna
+      { sel: '#experience .space-y-12 > div:nth-child(1) > div:nth-child(2)', en: 'Sep 2022 – Present <span class="block text-[11px] text-slate-400 font-normal">Full-time</span>' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(1) span', en: '<strong>CI/CD Pipeline from Scratch:</strong> Pioneered and implemented the company\'s automated CI/CD pipeline using <strong class="text-white">Jenkins and Docker</strong> to automate build, testing, and zero-downtime deployment workflows.' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(2) span', en: '<strong>DIBSP Enterprise Ecosystem:</strong> Architected, developed, and maintained 4 integrated enterprise portals: internal operations, partner & client portal, SPPAJK onboarding, and core backend services.' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(3) span', en: '<strong>Critical Platform Modernization:</strong> Led the migration of <code class="text-xs font-mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded">survey.binasentra</code> from MERN stack to <strong class="text-white">Go, SQL, and Next.js</strong>, and <code class="text-xs font-mono text-cyan-300 bg-slate-800 px-1 py-0.5 rounded">sapa.binasentra</code> from React.js & Express.js to <strong class="text-white">Next.js & Go</strong>.' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(4) span', en: '<strong>Corporate Website Transformation:</strong> Rebuilt the corporate website from legacy PHP into a fast, modern, and interactive platform powered by <strong class="text-white">Next.js and Express.js</strong>.' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(5) span', en: '<strong>Web Drive Cloud Platform:</strong> Engineered a secure enterprise cloud storage platform using <strong class="text-white">Svelte and Go</strong> for encrypted policy and document distribution to underwriters.' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(6) span', en: '<strong>Bank BTN Host-to-Host (H2H) Integration:</strong> Developed high-concurrency <strong class="text-white">Go</strong> Host-to-Host APIs for core banking integration and automated real-time insurance policy issuance.' },
+      { sel: '#experience .space-y-12 > div:nth-child(1) ul li:nth-child(7) span', en: '<strong>Database Optimization & Mobile Apps:</strong> Performed query tuning and stored procedure optimization on Microsoft SQL Server; built a real-time <strong class="text-white">Flutter</strong> server monitoring mobile app with push notifications and maintained the BSPNet broker marketplace.' },
+
+      // Experience 2: Nasari Sentra UMKM
+      { sel: '#experience .space-y-12 > div:nth-child(2) > div:nth-child(2)', en: 'Sep 2021 – Aug 2022 <span class="block text-[11px] text-slate-400 font-normal">Contract</span>' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(1) h4', en: 'Back-End Developer Role (Sep 2021 – Aug 2022):' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(1) ul li:nth-child(1) span', en: 'Maintained web and mobile backend APIs on <a href="https://nadi.co.id" target="_blank" rel="noopener noreferrer" class="text-cyan-300 hover:underline font-mono text-xs">nadi.co.id</a> to ensure high operational stability.' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(1) ul li:nth-child(2) span', en: 'Developed V2 service APIs designed for high efficiency and horizontal scalability.' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(1) ul li:nth-child(3) span', en: '<strong>Redis Refactoring:</strong> Refactored core transaction APIs with Redis caching to significantly accelerate response times and execution speed.' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(1) ul li:nth-child(4) span', en: 'Engineered backend APIs for vouchers, e-learning, interactive live chat, Nadi PayLater, loyalty points, and referral codes.' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(2) h4', en: 'Frontend Developer Role (Mar 2022 – Aug 2022):' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(2) ul li:nth-child(1) span', en: 'Maintained and enhanced the web admin dashboard to ensure optimal stability and user experience.' },
+      { sel: '#experience .space-y-12 > div:nth-child(2) .space-y-4 > div:nth-child(2) ul li:nth-child(2) span', en: 'Implemented new frontend features based on UI/UX specifications and integrated RESTful APIs.' },
+
+      // Experience 3: PT Surya Fajar Equity Fund
+      { sel: '#experience .space-y-12 > div:nth-child(3) > div:nth-child(2)', en: 'Mar 2021 – Jul 2021 <span class="block text-[11px] text-slate-400 font-normal">Full-time</span>' },
+      { sel: '#experience .space-y-12 > div:nth-child(3) ul li:nth-child(1) span', en: '<strong>Backend Architecture Migration:</strong> Rebuilt the backend architecture by migrating from <strong class="text-white">Laravel-MongoDB to NestJS-MySQL</strong> to improve scalability and reliability for equity crowdfunding transactions.' },
+      { sel: '#experience .space-y-12 > div:nth-child(3) ul li:nth-child(2) span', en: 'Maintained and comprehensively tested existing APIs while designing new microservice-ready API endpoints.' },
+      { sel: '#experience .space-y-12 > div:nth-child(3) ul li:nth-child(3) span', en: 'Redesigned the <a href="https://sfund.id" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-cyan-300 bg-slate-800 px-1.5 py-0.5 rounded hover:bg-slate-700 transition-colors">sfund.id ↗</a> admin dashboard UI and integrated backend APIs into the frontend system.' },
+
+      // Experience 4: Early Experience & Internships
+      { sel: '#experience .space-y-12 > div:nth-child(4) h3', en: 'Early Career & Internships' },
+      { sel: '#experience .space-y-12 > div:nth-child(4) ul li:nth-child(1) span', en: '<strong>CV. Emedia Bandung (Nov 2020):</strong> Freelance Backend Developer — built school portal CRUD modules using Laravel & Bootstrap UI.' },
+      { sel: '#experience .space-y-12 > div:nth-child(4) ul li:nth-child(2) span', en: '<strong>Innovation Day - Telkom DDB Bandung (Jul 2020 – Dec 2020):</strong> Developed a Swagger-based API documentation platform replica, Express.js/Nodemailer email notification service, and Dockerfiles for container deployment.' },
+      { sel: '#experience .space-y-12 > div:nth-child(4) ul li:nth-child(3) span', en: '<strong>PT Industri Telekomunikasi Indonesia (INTI) (Jun 2019 – Jul 2019):</strong> Performed bug analysis, use-case flowchart design, feature development, and comprehensive testing for the Musi Medika Cendikia Hospital system.' },
+
+      // Projects Section Header & Filters
+      { sel: '#projects .text-center > span', en: 'Portfolio' },
+      { sel: '#projects .text-center > h2', en: 'Projects' },
+      { sel: '#projects .text-center > p', en: 'Selected enterprise systems, fintech platforms, microservices integrations, and mobile applications.' },
+      { sel: '#projectFilter button[data-filter="all"]', en: 'All Projects' },
+
+      // Project Cards Descriptions (1 to 11)
+      { sel: '#projects .grid > div:nth-child(1) .p-6 p', en: 'Architected and modernized an integrated 4-portal enterprise ecosystem (Internal Operations, Partners & Clients, SPPAJK Onboarding, Backend). Led the migration from MERN stack to Go, SQL, and Next.js with high-availability architecture.' },
+      { sel: '#projects .grid > div:nth-child(2) .p-6 p', en: 'Built and optimized V2 web & mobile APIs for the MSME & Cooperative digital ecosystem: Nadi PayLater, e-learning, vouchers, live chat, loyalty points, referral codes, fast transaction refactoring with Redis, and admin dashboard.' },
+      { sel: '#projects .grid > div:nth-child(3) .p-6 p', en: 'Led the backend architecture migration of the equity crowdfunding investment platform from Laravel-MongoDB to NestJS-MySQL for high transaction scalability, and redesigned the sfund.id admin dashboard UI.' },
+      { sel: '#projects .grid > div:nth-child(4) .p-6 p', en: 'Developed high-speed Go-based Host-to-Host (H2H) integration services for automated insurance underwriting and direct real-time transaction settlement with Bank BTN core banking.' },
+      { sel: '#projects .grid > div:nth-child(5) .p-6 p', en: 'Designed and built an internal enterprise cloud storage platform for distributing insurance policies and underwriter documents securely, rapidly, and with encryption using Svelte and Go.' },
+      { sel: '#projects .grid > div:nth-child(6) .p-6 h3', en: 'Perintis Berdaya - MSME Empowerment Portal' },
+      { sel: '#projects .grid > div:nth-child(6) .p-6 p', en: 'Developed a national web platform for the MSME empowerment program under the Coordinating Ministry for Community Empowerment (Kemenko PM), built with Next.js, JavaScript, and MySQL.' },
+      { sel: '#projects .grid > div:nth-child(7) .p-6 p', en: 'Designed and developed an interactive corporate website and integrated member dashboard for the Bank BTN Employee Welfare Foundation (YKPBTN) using Laravel and PHP.' },
+      { sel: '#projects .grid > div:nth-child(8) .p-6 p', en: 'Developed a dynamic corporate website and custom Laravel CMS for PT Geo Proteksi Indonesia to strengthen its geotechnical construction brand identity and project service catalog.' },
+      { sel: '#projects .grid > div:nth-child(9) .p-6 p', en: 'Built a modern corporate website and Content Management System (CMS) for PT Geolestari to showcase its civil construction profile, field project portfolio, and engineering services.' },
+      { sel: '#projects .grid > div:nth-child(10) .p-6 p', en: 'Music streaming platform built on a distributed microservices architecture. High-performance streaming backend powered by Go (Gin) & Express.js with a responsive Nuxt.js frontend.' },
+      { sel: '#projects .grid > div:nth-child(11) .p-6 p', en: 'Online course platform built with multi-service architecture: API Gateway, User Service (Express.js), Course & Order Service (Laravel), and SSR Frontend Client (Next.js & Tailwind).' },
+      { sel: '#projects .grid > div:nth-child(12) .p-6 p', en: 'Real-time server health monitoring mobile app built with Flutter for PT Binasentra Purna, alongside an Android Kotlin & Firebase movie ticket booking application.' },
+
+      // Education & Certifications Section
+      { sel: '#education .text-center > span', en: 'Credentials & Qualifications' },
+      { sel: '#education .text-center > h2', en: 'Education & Certifications' },
+      { sel: '#education .text-center > p', en: 'Academic foundation in computer science and industry-recognized professional certifications.' },
+      { sel: '#education .mb-16 > h3', en: '<i class="fa-solid fa-graduation-cap text-cyanAccent-400"></i> Formal Education' },
+
+      // S2 & S1 Cards
+      { sel: '#education .mb-16 .grid > div:nth-child(1) span.text-xs', en: 'Sep 2024 – Sep 2026 (Graduated)' },
+      { sel: '#education .mb-16 .grid > div:nth-child(1) h4', en: 'Master of Computer Science (M.Kom)' },
+      { sel: '#education .mb-16 .grid > div:nth-child(1) p.text-xs', en: 'Focused on advanced software engineering, cloud computing architecture, enterprise IT governance, and computational intelligence.' },
+
+      { sel: '#education .mb-16 .grid > div:nth-child(2) span.text-xs', en: '2016 – 2021 (Graduated)' },
+      { sel: '#education .mb-16 .grid > div:nth-child(2) h4', en: 'Bachelor of Informatics (S.Kom)' },
+      { sel: '#education .mb-16 .grid > div:nth-child(2) p.text-xs', en: 'In-depth study of algorithms & data structures, object-oriented programming, relational databases, computer networks, and software engineering.' },
+
+      // Certifications Header & 7 Cards
+      { sel: '#education > div > div:last-child h3', en: '<i class="fa-solid fa-certificate text-brand-400"></i> Certifications & Licenses' },
+      { sel: '#education > div > div:last-child > div:first-child > span', en: 'Click "Preview Image" to view certificate or "Verify Credential" for official link' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(1) .text-emerald-400', en: 'Score 408' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(1) p.text-slate-400', en: 'Internationally recognized English proficiency certification issued by the British Council with a score of 408.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(1) a.cert-link', en: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credential' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(2) p.text-slate-400', en: 'Validated algorithmic problem-solving skills, fundamental data structures, array manipulation, and time complexity optimization.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(2) a.cert-link', en: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credential' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(3) span.text-sky-400:first-child', en: 'Dec 2023' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(3) p.text-slate-400', en: 'Modern cross-platform mobile app development with Flutter, state management, REST API integration, and real-time notifications.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(3) a.cert-link', en: '<i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Credential' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(4) p.text-slate-400', en: 'Distributed system architecture, API Gateway implementation, and multi-service integration using Node.js and Laravel.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(4) button.view-cert-modal', en: '<i class="fa-solid fa-image"></i> Preview Image' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(4) a.cert-link', en: '<i class="fa-solid fa-link"></i> Web Link' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(5) p.text-slate-400', en: 'Intensive backend engineering using Laravel framework, Eloquent ORM, authentication, RESTful APIs, and MySQL.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(5) button.view-cert-modal', en: '<i class="fa-solid fa-image"></i> Preview Image' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(5) a.cert-link', en: '<i class="fa-solid fa-link"></i> Web Link' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(6) span.text-emerald-400:first-child', en: 'Oct 2020' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(6) p.text-slate-400', en: 'Building integrated modern e-commerce applications with Vue.js state management, payment gateway integration, and Laravel backend.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(6) button.view-cert-modal', en: '<i class="fa-solid fa-image"></i> Preview Image' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(6) a.cert-link', en: '<i class="fa-solid fa-link"></i> Web Link' },
+
+      { sel: '#education > div > div:last-child .grid > div:nth-child(7) p.text-slate-400', en: 'Native Android application development, Firebase cloud database integration, mobile UI/UX design, and MVVM architecture.' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(7) button.view-cert-modal', en: '<i class="fa-solid fa-image"></i> Preview Image' },
+      { sel: '#education > div > div:last-child .grid > div:nth-child(7) a.cert-link', en: '<i class="fa-solid fa-link"></i> Web Link' },
+
+      // Contact Section
+      { sel: '#contact .text-center > span', en: 'Direct Connection' },
+      { sel: '#contact .text-center > h2', en: "Let's Discuss & Collaborate" },
+      { sel: '#contact .text-center > p', en: 'Open for international & remote software engineering opportunities, technical consulting, or enterprise system architecture.' },
+      { sel: '#contact .lg\\:col-span-6.space-y-4 > div:nth-child(1) p.text-xs', en: 'Primary Email' },
+      { sel: '#contact .lg\\:col-span-6.space-y-4 > div:nth-child(2) p.text-xs', en: 'LinkedIn Profile' },
+      { sel: '#contact .lg\\:col-span-6.space-y-4 > div:nth-child(4) p.text-xs', en: 'Official Portfolio & CV Document' },
+      { sel: '#contact .lg\\:col-span-6.space-y-4 > div:nth-child(4) a:last-child span', en: 'Download PDF' },
+
+      // Contact Form
+      { sel: '#contact .lg\\:col-span-6.p-8 h3', en: 'Send a Direct Message' },
+      { sel: '#contact .lg\\:col-span-6.p-8 > p', en: 'Your message will be routed directly to Rolanda Difandana\'s personal email.' },
+      { sel: '#contact form > div:nth-child(1) label', en: 'Full Name' },
+      { sel: '#contact form > div:nth-child(2) label', en: 'Email Address' },
+      { sel: '#contact form > div:nth-child(3) label', en: 'Message / Proposal' },
+      { sel: '#contact form button[type="submit"] span', en: 'Send Message Now' },
+      { sel: '#closeCertModalBtn', en: 'Close Preview' }
+    ];
+
+    function setLanguage(lang) {
+      currentLang = lang === 'en' ? 'en' : 'id';
+      localStorage.setItem('portfolio_lang', currentLang);
+      document.documentElement.lang = currentLang;
+
+      // Update active state on all ID / EN toggle buttons
+      document.querySelectorAll('.lang-id').forEach(btn => {
+        if (currentLang === 'id') {
+          btn.className = 'lang-btn lang-id px-2.5 py-1.5 rounded-lg transition-all duration-200 bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white shadow-sm';
+        } else {
+          btn.className = 'lang-btn lang-id px-2.5 py-1.5 rounded-lg transition-all duration-200 text-slate-400 hover:text-white';
+        }
+      });
+      document.querySelectorAll('.lang-en').forEach(btn => {
+        if (currentLang === 'en') {
+          btn.className = 'lang-btn lang-en px-2.5 py-1.5 rounded-lg transition-all duration-200 bg-gradient-to-r from-brand-600 to-cyanAccent-600 text-white shadow-sm';
+        } else {
+          btn.className = 'lang-btn lang-en px-2.5 py-1.5 rounded-lg transition-all duration-200 text-slate-400 hover:text-white';
+        }
+      });
+
+      // Translate all mapped DOM nodes (caching original Indonesian HTML automatically)
+      i18nNodes.forEach(item => {
+        let el = document.querySelector(item.sel);
+        if (item.prevSibling && el) {
+          el = el.previousElementSibling;
+        }
+        if (!el) return;
+
+        if (!el.dataset.origId) {
+          el.dataset.origId = item.id || el.innerHTML;
+        }
+        el.innerHTML = currentLang === 'en' ? item.en : el.dataset.origId;
+      });
+
+      // Update form input placeholders
+      const senderName = document.getElementById('senderName');
+      const senderEmail = document.getElementById('senderEmail');
+      const senderMessage = document.getElementById('senderMessage');
+      if (senderName) senderName.placeholder = currentLang === 'en' ? 'e.g., John Doe' : 'Contoh: Budi Santoso';
+      if (senderEmail) senderEmail.placeholder = currentLang === 'en' ? 'name@company.com' : 'nama@perusahaan.com';
+      if (senderMessage) senderMessage.placeholder = currentLang === 'en' ? 'Write your message regarding a project, collaboration, or job opportunity...' : 'Tuliskan pesan Anda terkait proyek, kolaborasi, atau peluang kerja...';
+
+      // Update Typewriter roles dynamically
+      roles = rolesByLang[currentLang] || rolesByLang.id;
+    }
+
+    // Initialize saved or default language
+    setLanguage(currentLang);
   </script>
 
 </body>
